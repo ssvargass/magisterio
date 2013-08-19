@@ -65,10 +65,11 @@
 <div id="page-wrapper">
   <? if (isset($page['t-header'])): ?>
     <div id="top">
-      <div class="t-header">      
+      <div class="t-header clearfix">      
         <?php print render($page['t-header']); ?>
       </div>
     </div>  
+    <div class="clear"></div>
   <? endif; ?>
   <div id="content-wrapper">
     <div id="content">
