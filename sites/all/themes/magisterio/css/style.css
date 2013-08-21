@@ -37,14 +37,14 @@ body {
 	list-style: none !important;
 }
 .region-t-header {}
-.region-t-header .contextual-links-region {
+.region-t-header .block-menu {
 	float: left;
 	width: 400px;
 }
-.region-t-header .contextual-links-region li {
+.region-t-header .block-menu li {
 	float: left;
 }
-.region-t-header .contextual-links-region li a {
+.region-t-header .block-menu li a {
 	display: block;
 	padding: 5px;
 	text-transform: uppercase;
@@ -61,4 +61,14 @@ body {
 }
 .region-t-header .block-menu li:nth-child(4) a {
 	color: #F68B1F;
+}
+.region-t-header .block-user {
+	display: none;
+}
+
+/**/
+#content-wrapper {
+	width: 950px;
+	padding: 10px;
+	margin: auto;
 }
