@@ -353,8 +353,8 @@ function commerce_pricing_attributes_field_widget_form(&$form, &$form_state, $fi
       ),
       '#weight' => 999,
     );
-
-    if(isset($form_state['triggering_element']) and $form_state['triggering_element']['#field_name'] == $element['#field_name']){
+    
+    if(isset($form_state['triggering_element']) and isset($form_state['triggering_element']['#field_name']) and $form_state['triggering_element']['#field_name'] == $element['#field_name']){
       // Get submitted values from the ajax request.
       $element_state = drupal_array_get_nested_value($form_state['values'], $element['#field_parents']);
 
