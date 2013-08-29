@@ -47,18 +47,4 @@ body {
 .region-t-header .contextual-links-region li a {
 	display: block;
 	padding: 5px;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-.region-t-header .block-menu li:first-child a {
-	color: #006FBA;
-}
-.region-t-header .block-menu li:nth-child(2) a {
-
-}
-.region-t-header .block-menu li:nth-child(3) a {
-	color: #6E9A34;
-}
-.region-t-header .block-menu li:nth-child(4) a {
-	color: #F68B1F;
 }

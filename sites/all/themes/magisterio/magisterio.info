@@ -1,0 +1,25 @@
+name = Corporacion Magisterio
+description = Corporacion Magisterio tema profesional.
+package = Core
+version = VERSION
+core = 7.x
+
+; Styles
+stylesheets[all][] = css/style.css
+
+; Scripts
+scripts[] = js/script.js
+
+; Regions
+regions[t-header] = Top Header
+regions[header] = Header
+regions[s-left] = Sidebar left
+regions[content] = Content
+regions[s-right] = Sidebar right
+regions[postcontent] = Post content
+regions[footer] = Footer
+
+
+version = "7.17"
+project = "drupal"
+datestamp = "1328134560"
