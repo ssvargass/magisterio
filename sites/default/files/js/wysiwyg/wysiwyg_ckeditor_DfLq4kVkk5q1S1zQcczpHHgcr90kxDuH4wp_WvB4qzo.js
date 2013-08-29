@@ -1,1 +1,0 @@
-window.CKEDITOR_BASEPATH = '/magisterio/sites/all/libraries/ckeditor/';
