@@ -80,7 +80,7 @@ body {
 	width: 100%;
 }
 #block-views-t-picos-block h2 {
-	padding: 10px;
+	padding: 5px;
 	background: #999;
 	color: #fff;
 	margin-top: 10px;
@@ -98,23 +98,46 @@ body {
 
 #block-views-t-picos-block h2:after {
 	content: ' ';
-	width: 0; 
-	height: 0; 
-	border-top: 18px solid transparent;
-	border-bottom: 18px solid transparent;
-	border-left: 15px solid #999;
+	width: 0;
+	height: 0;
+	border-top: 13px solid transparent;
+	border-bottom: 14px solid transparent;
+	border-left: 10px solid #999;
 	position: absolute;
-	top: 1px;
-	right: -15px;
+	top: 0px;
+	right: -10px;
 }
 #block-views-t-picos-block > .content {
 	display: inline-block;
+	vertical-align: middle;
 }
 #block-views-t-picos-block .view-t-picos .views-row {
 	float: left;
+	padding: 5px;
+	color: #000;
+	border-right: 1px dashed #000;
+	position: relative;
+}
+#block-views-t-picos-block .view-t-picos .views-row .views-field-name {
+	background: url(../img/arrowSubMenu.png) no-repeat right center;
+	padding-right: 15px;
+	cursor: pointer;
 }
 #block-views-t-picos-block .view-t-picos .views-row .views-field-nothing {
 	display: none;
+	background: #fff;
+	padding: 5px;
+	min-width: 250px;
+	position: absolute;
+	top: 34px;
+	left: 0px;
+	border: 1px solid #000;
+	border-top: none;
 }
-
+#block-views-t-picos-block .view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .left-menu-topcs {
+	float: left;
+}
+#block-views-t-picos-block .view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .left-menu-topcs li {
+	color: #666;
+}
 
