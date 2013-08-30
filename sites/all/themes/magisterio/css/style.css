@@ -11,9 +11,9 @@ body {
 * {
 	margin: 0;
 	padding: 0;
-	list-style: none;
 	text-decoration: none;
 	border: none;
+	list-style: none;
 }
 
 .clear {
@@ -25,49 +25,53 @@ body {
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
 
-/*home header*/
-#content-wrapper {
-	padding-bottom: 10px;
-	border-bottom: 1px solid #DDD;
-	margin-bottom: 10px;
-}
+/*home header inicio*/
+
 #content-wrapper > #content {
 	width: 960px;
 	margin: auto;
 }
-#content-wrapper > #content * {
+.region-header {
+	margin-bottom: 10px;
+}  
+.front #content-wrapper > #content * {
 	list-style: none;
 }
-#content-wrapper #content .block-menu:first-child {
+.front #content-wrapper #content .block-menu:first-child {
 	float: left;
 	width: 500px;
 }
-#content-wrapper #content .block-menu:first-child .menu li {
+.front #content-wrapper #content .block-menu:first-child .menu li {
 	float: left;
 	font-size: 1.5em;
 }
-	#block-user-login,
-	#content-wrapper #content .block-menu:first-child .menu .menu {
-		display: none;
-	}
-#content-wrapper #content .block-menu:first-child .menu li:first-child > a {
+.front #block-user-login,
+.front #content-wrapper #content .block-menu:first-child .menu .menu {
+	display: none;
+}
+.front #content-wrapper #content .block-menu:first-child .menu li:first-child > a {
 	color:#006FBA;
 }
-#content-wrapper #content .block-menu:first-child .menu li:nth-child(2) > a{
+.front #content-wrapper #content .block-menu:first-child .menu li:nth-child(2) > a{
 	color:#ED1941;
 }
-#content-wrapper #content .block-menu:first-child .menu li:nth-child(3) > a{
+.front #content-wrapper #content .block-menu:first-child .menu li:nth-child(3) > a{
 	color: #6E9A34;
 }
-#content-wrapper #content .block-menu:first-child .menu li:nth-child(4) > a{
+.front #content-wrapper #content .block-menu:first-child .menu li:nth-child(4) > a{
 	color: #F68B1F;
 }
-
-#content-wrapper #content .block-menu:nth-child(2) {
+.front #content-wrapper #content #block-system-user-menu {
 	float: right;
 }
-
-#block-views-t-picos-block {
+.front #content-wrapper #content #block-system-user-menu li {
+	display:inline-block;
+	*display: inline-block;
+}
+.front #content-wrapper #content #block-system-user-menu li a {
+	display: block;
+}
+.front #block-views-t-picos-block {
 	clear: both;
 	border-bottom: 1px solid #000;
 	padding-bottom: 10px;
@@ -111,33 +115,130 @@ body {
 	display: inline-block;
 	vertical-align: middle;
 }
-#block-views-t-picos-block .view-t-picos .views-row {
+.view-t-picos .views-row {
 	float: left;
 	padding: 5px;
 	color: #000;
 	border-right: 1px dashed #000;
 	position: relative;
 }
-#block-views-t-picos-block .view-t-picos .views-row .views-field-name {
+.view-t-picos .views-row .views-field-name {
 	background: url(../img/arrowSubMenu.png) no-repeat right center;
 	padding-right: 15px;
 	cursor: pointer;
 }
-#block-views-t-picos-block .view-t-picos .views-row .views-field-nothing {
+.view-t-picos .views-row .views-field-nothing {
 	display: none;
 	background: #fff;
-	padding: 5px;
-	min-width: 250px;
+	padding: 10px 0px;
+	min-width: 570px;
 	position: absolute;
-	top: 34px;
+	top: 37px;
 	left: 0px;
-	border: 1px solid #000;
-	border-top: none;
+	border: 1px solid #BBB;
+	z-index: 1000;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 4px 5px 5px rgba(230, 230, 230, 0.50);
+	-moz-box-shadow: 4px 5px 5px rgba(230, 230, 230, 0.50);
+	box-shadow: 4px 5px 5px rgba(230, 230, 230, 0.50);
 }
-#block-views-t-picos-block .view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .left-menu-topcs {
+.view-t-picos .views-row .views-field-nothing:before {
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-left: 7px solid transparent;
+	position: absolute;
+	top: -20px;
+	left: 20px;
+	border-bottom: 10px solid #BBB;
+	border-right: 7px solid transparent;
+}
+.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .left-menu-topcs {
 	float: left;
+	width: 199px;
+	height: 100%;
 }
-#block-views-t-picos-block .view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .left-menu-topcs li {
-	color: #666;
+.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .left-menu-topcs li {
+	color: #4C4C4C;
+	padding: 5px 10px 5px 15px;
+	cursor: pointer;
 }
+.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .left-menu-topcs li:hover {
+	background: #F1F1F1;
+	border-left: 2px solid #D45680;
+	padding-left: 10px;
+}
+.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .right-menu-topcs {
+	float:left;
+	width:359px;
+	padding-left:10px;
+	border-left:2px groove #DDD;
+}
+.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs {
+	display: none;
+}
+.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs .views-row {
+	border: none;
+	width: 100%;
+}
+.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs .views-row a {
+	display: block;
+	color: #000;
+}
+.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs .views-row a:hover {
+	color: #D45680
+}
+
+/*home header fin*/
+
+/*regioLeft inicio*/
+
+.region-s-left {
+	width:390px;
+	float:left;
+	margin-right:10px;
+	
+}
+.region-s-left > .block-views > h2 {
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #4C4C4C;
+}
+.region-s-left .view-novedades-magisterio {
+	padding: 10px 0;
+	border-top: 1px solid #ddd;
+	margin-top: 10px;
+	position: relative;
+}
+.region-s-left .view-novedades-magisterio:before {
+	content: '';
+	width: 70px;
+	height: 5px;
+	position: absolute;
+	z-index: 10;
+	top: -6px;
+	left: 0px;
+}
+.region-s-left > .block-views:first-child .view-novedades-magisterio:before {
+	background: #006FBA;
+}
+.region-s-left > .block-views:last-child .view-novedades-magisterio:before {
+	background: #ED1A40;
+}
+.region-s-left .view-novedades-magisterio .jcarousel-container {
+	padding: 0px;
+}
+.region-s-left .view-novedades-magisterio .jcarousel-container .jcarousel-clip-horizontal {
+	width: 390px;
+}
+.region-s-left .view-novedades-magisterio .jcarousel-container .jcarousel-clip-horizontal li {
+	border: none;
+}
+
+
+/*regioLeft fin*/
 
