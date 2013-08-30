@@ -1,0 +1,4 @@
+name = Bloques Magisterio
+description = "Modulo que contiene los bloques custom para Magisterio"
+package = Magisterio
+core = 7.x

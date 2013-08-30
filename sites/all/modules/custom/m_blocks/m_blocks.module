@@ -1,0 +1,31 @@
+<?php
+/**
+ * Implements hook_block_info().
+ */
+function m_blocks_block_info(){
+  $blocks['logo_magisterio'] = array(
+    'info' => t('Logo representativo de sección'), 
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function m_blocks_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'logo_magisterio':
+      $block['content'] = _m_blocks_logo_page();
+    break;
+  } 
+  return $block;
+} 
+
+function _m_blocks_logo_page(){
+  global $base_url;
+  $link = '';
+  if (drupal_is_front_page()) $link = l('', $base_url);
+  $output = '<div class="m-logoperpage">'.$link.'</div>';
+  return $output;
+}
