@@ -192,7 +192,7 @@ body {
 
 /*home header fin*/
 
-/*regioLeft-right inicio*/
+/*regio-Left-right inicio*/
 
 .region-s-left {
 	width:390px;
@@ -263,6 +263,19 @@ body {
 .region-s-left .block-views:last-child {
 	margin-top: 20px;
 }
+.region-s-left #block-views-art-culos-block-1 .view-art-culos .views-row {
+	margin: 5px 0px;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #DDD;
+}
+.region-s-left #block-views-art-culos-block-1 .view-art-culos .views-row a {
+	color: #D65B87;
+	font-weight: bold;
+	font-size: 15px;
+}
+.region-s-left #block-views-art-culos-block-1 .view-art-culos .views-row.views-row-first a {
+	font-size: 23px;
+}
 .region-s-right {
 	width: 350px;
 	float: right;
@@ -294,8 +307,53 @@ body {
 	color: #D65B87;
 	font-weight: bold;
 }
+#content-wrapper .region.region-content {
+	width: 198px;
+	float: left;
+	height: 500px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+#content-wrapper .view-art-culos .views-field {
+	margin-bottom: 5px;
+}
+#content-wrapper .view-art-culos .views-field-field-fecha-de-publicaci-n {
+	color: #A4A6AB;
+}
+#content-wrapper .view-art-culos .views-field-title a {
+	color: #294182;
+}
+.region-postcontent {
+	clear: both;
+	margin-top: 20px;
+	padding-top: 30px;
+}
+.region-postcontent h2 {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.region-postcontent .view-art-culos .views-row {
+	width: 217px;
+	padding: 5px 10px;
+	display: inline-block;
+	border-right: 1px solid #DDD;
+}
+.region-postcontent .view-art-culos .views-field-field-nombre-del-autor {
+	font-size: 21px;
+}
+.region-postcontent .view-art-culos .views-field-title a {
+	color: #D65B87;
+	font-size: 15px;
+	font-weight: bold;
+}
+.region-postcontent .view-art-culos .views-row.views-row-last {
+	border: none;
+}
 
-/*regioLeft-right fin*/
+
+/*regio-Left-right fin*/
+
+/**/
 
 
 /*footer inicio*/
@@ -356,3 +414,4 @@ body {
 	border-top: 2px solid #CC316D;
 	padding-top: 70px;
 }
+/*footer fin*/
