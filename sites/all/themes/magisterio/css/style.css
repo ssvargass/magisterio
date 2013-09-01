@@ -41,36 +41,34 @@ body {
 	float: left;
 	width: 500px;
 }
-.front #content-wrapper #content .block-menu:first-child .menu li {
+.front #content-wrapper .block-menu .menu li {
 	float: left;
 	font-size: 1.5em;
 }
 .front #block-user-login,
-.front #content-wrapper #content .block-menu:first-child .menu .menu {
+.front #content-wrapper .block-menu .menu .menu {
 	display: none;
 }
-.front #content-wrapper #content .block-menu:first-child .menu li:first-child > a {
+.front #content-wrapper .block-menu .menu li:first-child > a {
 	color:#006FBA;
 }
-.front #content-wrapper #content .block-menu:first-child .menu li:nth-child(2) > a{
+.front #content-wrapper .block-menu .menu li:nth-child(2) > a{
 	color:#ED1941;
 }
-.front #content-wrapper #content .block-menu:first-child .menu li:nth-child(3) > a{
+.front #content-wrapper .block-menu .menu li:nth-child(3) > a{
 	color: #6E9A34;
 }
-.front #content-wrapper #content .block-menu:first-child .menu li:nth-child(4) > a{
+.front #content-wrapper .block-menu .menu li:nth-child(4) > a{
 	color: #F68B1F;
 }
-.front #content-wrapper #content #block-system-user-menu {
+.front #content-wrapper #block-system-user-menu {
 	float: right;
 }
-.front #content-wrapper #content #block-system-user-menu li {
-	display:inline-block;
-	*display: inline-block;
+.front #content-wrapper #block-system-user-menu .menu a {
+	font-size: 12px;
+	color: #000;
 }
-.front #content-wrapper #content #block-system-user-menu li a {
-	display: block;
-}
+
 .front #block-views-t-picos-block {
 	clear: both;
 	border-bottom: 1px solid #000;
@@ -231,14 +229,30 @@ body {
 }
 .region-s-left .view-novedades-magisterio .jcarousel-container {
 	padding: 0px;
-}
-.region-s-left .view-novedades-magisterio .jcarousel-container .jcarousel-clip-horizontal {
-	width: 390px;
+	width: 390px
 }
 .region-s-left .view-novedades-magisterio .jcarousel-container .jcarousel-clip-horizontal li {
 	border: none;
 }
-
+.region-s-left .view-novedades-magisterio .jcarousel-container > a {
+	background: url(../img/arrowNovedades.png) no-repeat center center;
+	top: 40%;
+}
+.region-s-left .view-novedades-magisterio .jcarousel-container > a.jcarousel-prev {
+	left: 0px;
+}
+.region-s-left .view-novedades-magisterio .jcarousel-container > a.jcarousel-next {
+	right: 0px;
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+.region-s-left .block-views:last-child .view-novedades-magisterio .jcarousel-container > a {
+	background: url(../img/arrowNovedades2.png) no-repeat center center;
+}
+.region-s-left .block-views:last-child {
+	margin-top: 20px;
+}
 
 /*regioLeft fin*/
 
