@@ -6,6 +6,12 @@ function m_blocks_block_info(){
   $blocks['logo_magisterio'] = array(
     'info' => t('Logo representativo de sección'), 
   );
+  $blocks['site_logo'] = array(
+    'info' => t('Logo configurado en el theme'), 
+  );
+  $blocks['sub_menu_interna'] = array(
+    'info' => t('Sub menu de las páginas internas'), 
+  );
   return $blocks;
 }
 
@@ -18,6 +24,12 @@ function m_blocks_block_view($delta = '') {
     case 'logo_magisterio':
       $block['content'] = _m_blocks_logo_page();
     break;
+    case 'site_logo':
+      $block['content'] = _m_blocks_site_logo();
+    break;
+    case 'sub_menu_interna':
+      $block['content'] = _m_blocks_sub_menu_interna();
+    break;
   } 
   return $block;
 } 
@@ -28,4 +40,32 @@ function _m_blocks_logo_page(){
   if (drupal_is_front_page()) $link = l('', $base_url);
   $output = '<div class="m-logoperpage">'.$link.'</div>';
   return $output;
+}
+
+function _m_blocks_site_logo(){
+  global $base_url;
+  $url_logo = theme_get_setting('logo');
+  $variables_image = array(
+    'path' => $url_logo,
+    'title' => 'Home',
+    'attributes' => array(),
+  );
+  $image_html = render(theme_image($variables_image));
+  $output = '<a href="/">' . $image_html . '</a>';
+  return $output;
+}
+
+function _m_blocks_sub_menu_interna(){
+  $url = request_path();
+  switch ($url) {
+    case 'editorial':
+      $menu = menu_tree_all_data('main-menu');
+      //dpm($menu['49950 EDITORIAL 466']);
+      //dpm(render($menu['49950 EDITORIAL 466']));
+    break;
+    
+    default:
+      # code...
+    break;
+  }
 }
