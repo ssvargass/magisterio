@@ -57,15 +57,33 @@ function _m_blocks_site_logo(){
 
 function _m_blocks_sub_menu_interna(){
   $url = request_path();
+  $menu = menu_load_links('main-menu');
   switch ($url) {
     case 'editorial':
-      $menu = menu_tree_all_data('main-menu');
-      //dpm($menu['49950 EDITORIAL 466']);
-      //dpm(render($menu['49950 EDITORIAL 466']));
+      $pathern = 466;
+    break;
+    case 'libreria':
+      $pathern = 467;
     break;
     
     default:
       # code...
     break;
   }
+  $sub_menu = array();
+  foreach ($menu as $key => $value) {
+    if($value['p1'] == $pathern && $value['depth'] == 2) {
+      $title = $value['link_title'];
+      $path = ($value['link_path'] == '<front>') ? '' : path_load($value['link_path']);
+      $path = ($path == '') ? '' : $path['alias'];
+      $sub_menu[] = l($title,$path);
+    }
+  }
+  $list = array(
+    'items' => $sub_menu,
+    'title' => '',
+    'type' => 'ul',
+    'attributes' => array(),
+  );
+  return theme_item_list($list);
 }
