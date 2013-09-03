@@ -34,41 +34,55 @@ body {
 .region-header {
 	margin-bottom: 25px;
 }  
-.front #content-wrapper > #content * {
-	list-style: none;
-}
-.front #content-wrapper #content .block-menu:first-child {
-	float: left;
+.front .region-header .block-menu:first-child {
 	width: 500px;
 }
-.front #content-wrapper .block-menu .menu li {
+.region-t-header ul.menu li,
+.front .region-header .block-menu .menu li {
 	float: left;
+	list-style: none;
+}
+.region-t-header ul.menu li {
+	font-size: 1em;
+}
+.front .region-header .block-menu .menu li {
 	font-size: 1.5em;
 }
+.t-header #block-user-login,
+.t-header #block-system-user-menu,
+.region-t-header ul.menu ul.menu,
 .front #block-user-login,
-.front #content-wrapper .block-menu .menu .menu {
+.front .region-header .block-menu .menu .menu {
 	display: none;
 }
-.front #content-wrapper .block-menu .menu li:first-child > a {
+.region-t-header ul.menu li:first-child > a ,
+.front .region-header .block-menu .menu li:first-child > a {
 	color:#006FBA;
 }
-.front #content-wrapper .block-menu .menu li:nth-child(2) > a{
+.region-t-header ul.menu li:nth-child(2) > a,
+.front .region-header .block-menu .menu li:nth-child(2) > a{
 	color:#ED1941;
 }
-.front #content-wrapper .block-menu .menu li:nth-child(3) > a{
+.region-t-header ul.menu li:nth-child(3) > a,
+.front .region-header .block-menu .menu li:nth-child(3) > a{
 	color: #6E9A34;
 }
-.front #content-wrapper .block-menu .menu li:nth-child(4) > a{
+.region-t-header ul.menu li:nth-child(4) > a,
+.front .region-header .block-menu .menu li:nth-child(4) > a{
 	color: #F68B1F;
 }
-.front #content-wrapper #block-system-user-menu {
+.not-front .t-header #block-menu-menu-an-nimo-menu,
+.front .region-header #block-system-user-menu {
 	float: right;
 }
-.front #content-wrapper #block-system-user-menu .menu a {
+.front .region-header #block-system-user-menu .menu a {
 	font-size: 12px;
 	color: #000;
 }
-
+.not-front .t-header #block-menu-menu-an-nimo-menu ul.menu li a {
+	color: #9E9E9E;
+	font-size: 12px;
+}
 .front #block-views-t-picos-block {
 	clear: both;
 	border-bottom: 1px solid #000;
@@ -305,11 +319,16 @@ body {
 	border-bottom: 1px solid #DDD;
 	margin-bottom: 5px;
 }
+#content-wrapper .view-art-culos .views-field-title a {
+	color:#3A5998;
+	font-size:18px;
+	font-weight:bold;
+}
 .region-s-right .view-eventos .views-field-field-fecha-de-publicaci-n-1 {
 	float: left;
 	margin-right: 10px;
 	padding-right: 5px;
-	border-right: 1px dashed #9F9FA1;
+	border-right: 1px solid #9F9FA1;
 	color: #9F9FA1;
 	min-width: 35px;
 	text-align: center;
@@ -367,12 +386,45 @@ body {
 .region-postcontent .view-art-culos .views-row.views-row-last {
 	border: none;
 }
-
-
 /*regio-Left-right fin*/
 
-/**/
+/*editoriales inicio*/
 
+.not-front .t-header {
+	background: #F3F3F3;
+	padding: 10px 0;
+}
+.not-front .t-header .region-t-header {
+	width: 960px;
+	margin: auto;
+}
+.not-front .t-header .region-t-header > div.block {
+	float: left;
+}
+.not-front .t-header .region-t-header > div.block li {
+	list-style: none;
+}
+.not-front #content-wrapper .region-header #block-m-blocks-sub-menu-interna {
+	background: #036EB6;
+	padding: 10px;
+}
+.not-front #content-wrapper .region-header #block-m-blocks-sub-menu-interna * {
+	margin: 0;
+}
+.not-front #content-wrapper .region-header #block-m-blocks-sub-menu-interna li {
+	display: inline-block;
+	vertical-align: middle;
+}
+.not-front #content-wrapper .region-header #block-m-blocks-sub-menu-interna li a {
+	color: #FFF;
+	border-right: 1px solid #fff;
+	padding: 0 5px;
+}
+.not-front #content-wrapper .region-header #block-m-blocks-sub-menu-interna li.last a {
+	border: none;
+}
+
+/*editoriales fin*/
 
 /*footer inicio*/
 
@@ -440,8 +492,3 @@ body {
 }
 /*footer fin*/
 
-#content-wrapper .view-art-culos .views-field-title a {
-	color:#3A5998;
-	font-size:18px;
-	font-weight:bold;
-}
