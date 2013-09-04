@@ -15,7 +15,9 @@ body {
 	border: none;
 	list-style: none;
 }
-
+a:hover {
+	color: #CC316D;
+}
 .clear {
 	clear: both;
 }
@@ -27,6 +29,15 @@ body {
 
 /*home header inicio*/
 
+
+.m-logoperpage a {
+	background: url(../img/logo.png) no-repeat center center;
+	display: block;
+	cursor: pointer;
+	width: 220px;
+	height: 80px;
+	margin: 10px 0px;
+}
 #content-wrapper > #content {
 	width: 960px;
 	margin: auto;
@@ -129,10 +140,10 @@ body {
 }
 .view-t-picos .views-row {
 	float: left;
-	padding: 5px;
+	padding: 5px 8px 5px 3px;
 	color: #000;
-	border-right: 1px dashed #000;
 	position: relative;
+	background: url(../img/separador.png) no-repeat right center;
 }
 .view-t-picos .views-row .views-field-name {
 	background: url(../img/arrowSubMenu.png) no-repeat right center;
@@ -241,7 +252,7 @@ body {
 	background: #006FBA;
 }
 .region-s-left > .block-views:nth-child(2) .view-novedades-magisterio:before {
-	background: #ED1A40;
+	background: #ED1941;
 }
 .region-s-left .view-novedades-magisterio .jcarousel-container {
 	padding: 0px;
@@ -340,9 +351,8 @@ body {
 #content-wrapper .region.region-content {
 	width: 198px;
 	float: left;
-	height: 500px;
-	overflow-x: hidden;
-	overflow-y: auto;
+	height: 515px;
+	overflow: hidden;
 }
 #content-wrapper .view-art-culos .views-row {
 	margin-bottom: 20px;
@@ -470,8 +480,12 @@ body {
 	display: block;
 }
 .region-footer #block-menu-menu-footer-sub-menu.block-menu {
-	width: 500px;
 	margin: 0 auto 30px auto;
+	text-align: center;
+	width: 510px;
+}
+.region-footer #block-menu-menu-footer-sub-menu.block-menu ul.menu {
+	text-align: center;
 }
 .region-footer #block-menu-menu-footer-sub-menu.block-menu ul li {
 	float: left;
