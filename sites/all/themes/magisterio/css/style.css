@@ -22,6 +22,10 @@ a:hover {
 	clear: both;
 }
 
+h1.title {
+	display: none;
+}
+
 .clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 * html .clearfix { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
@@ -222,7 +226,7 @@ a:hover {
 .region-s-left {
 	width:390px;
 	float:left;
-	margin-right:10px;
+	margin-right:20px;
 	
 }
 .region-s-right > .block-views > h2,
@@ -232,9 +236,7 @@ a:hover {
 	text-transform: uppercase;
 	color: #4C4C4C;
 }
-.region-s-left .view-novedades-magisterio {
-	height: 210px;
-}
+.view-vistas-editorial:before,
 .view-eventos:before,
 .region-s-left .view-novedades-magisterio:before {
 	content: '';
@@ -244,6 +246,9 @@ a:hover {
 	z-index: 10;
 	top: -6px;
 	left: 0px;
+}
+.view-vistas-editorial:before {
+	background: #006FBA;
 }
 .view-eventos:before {
 	background: #D65B87;
@@ -280,14 +285,14 @@ a:hover {
 .region-s-left .view-novedades-magisterio .jcarousel-container .jcarousel-clip-horizontal li .views-field-commerce-price {
 	color: #3B5998;
 }
-.region-s-left .view-novedades-magisterio .jcarousel-container > a {
+.block-views .jcarousel-container > a {
 	background: url(../img/arrowNovedades.png) no-repeat center center;
 	top: 40%;
 }
-.region-s-left .view-novedades-magisterio .jcarousel-container > a.jcarousel-prev {
+.jcarousel-container > a.jcarousel-prev {
 	left: 0px;
 }
-.region-s-left .view-novedades-magisterio .jcarousel-container > a.jcarousel-next {
+.jcarousel-container > a.jcarousel-next {
 	right: 0px;
 	transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
@@ -312,8 +317,16 @@ a:hover {
 .region-s-left #block-views-art-culos-block-1 .view-art-culos .views-row.views-row-first a {
 	font-size: 35px;
 }
+.view-vistas-editorial,
+.view-eventos, .region-s-left .view-novedades-magisterio {
+	padding:10px 0;
+	border-top:1px solid #ddd;
+	margin-top:10px;
+	position:relative;
+	height: 210px;
+}
 .region-s-right {
-	width: 350px;
+	width: 330px;
 	float: right;
 }
 .view-eventos .views-row {
@@ -377,6 +390,10 @@ a:hover {
 	padding: 5px 10px;
 	display: inline-block;
 	border-right: 1px solid #DDD;
+	vertical-align: top;
+}
+.region-postcontent .view-art-culos .views-row.views-row-first {
+	padding-left: 0px;
 }
 .region-postcontent .view-art-culos .views-field-field-nombre-del-autor {
 	font-size: 21px;
@@ -426,7 +443,36 @@ a:hover {
 .not-front #content-wrapper .region-header #block-m-blocks-sub-menu-interna li.last a {
 	border: none;
 }
-
+.not-front .region-s-left {
+	width: 200px;
+}
+.not-front .region-s-left h2 {
+	font-size: 18px;
+}
+.not-front .region-s-left .view-eventos .views-field-title a {
+	color: #036EB6;
+}
+.not-front .region-s-left .view-eventos .views-field-title a:hover {
+	color: #D65B87;
+}
+.not-front #content-wrapper .region.region-content {
+	width: 740px;
+}
+.not-front .region-content > .block-views > h2 {
+	text-transform: uppercase;
+	font-size: 20px;
+}
+#block-views-vistas-editorial-block .view-vistas-editorial .jcarousel-container {
+	width: 100%;
+	padding: 0px;
+}
+.view-vistas-editorial .jcarousel-clip {
+	width: 690px;
+	left: 25px;
+}
+.view-vistas-editorial .jcarousel-clip-horizontal a {
+	display: block !important;
+}
 /*editoriales fin*/
 
 /*footer inicio*/
@@ -456,8 +502,9 @@ a:hover {
 	padding-left: 10px;
 	border-right: 1px solid #CCC;
 	border-left: 1px solid #fff;
-	height: 230px;
+	min-height: 290px;
 	display: block;
+	margin-bottom: 10px;
 }
 .region-footer #block-menu-menu-footer-menu.block-menu .content > .menu > li:first-child {
 	border-left: none;
@@ -471,13 +518,20 @@ a:hover {
 .region-footer > .block-block {
 	clear: both;
 }
-.region-footer #block-menu-menu-footer-menu#block-menu-menu-footer-menu.block-menu .content > .menu > li > .menu > .first > a {
+.region-footer #block-menu-menu-footer-menu#block-menu-menu-footer-menu.block-menu .content > .menu > li > .menu > li > a {
 	font-size: 16px;
 	font-weight: bold;
+	padding: 5px 0px;
+	display: block;
+	color: #000;
 }
 .region-footer #block-menu-menu-footer-menu.block-menu .content > .menu > li > .menu > li > ul > li > a {
 	padding: 3px 0;
 	display: block;
+	color: #000;
+}
+.region-footer #block-menu-menu-footer-menu.block-menu .content > .menu > li > .menu > li > ul > li > a:hover {
+	color: #CC316D;
 }
 .region-footer #block-menu-menu-footer-sub-menu.block-menu {
 	margin: 0 auto 30px auto;
@@ -499,10 +553,3 @@ a:hover {
 }
 /*footer fin*/
 
-
-.view-eventos, .region-s-left .view-novedades-magisterio {
-	padding:10px 0;
-	border-top:1px solid #ddd;
-	margin-top:10px;
-	position:relative;
-}
