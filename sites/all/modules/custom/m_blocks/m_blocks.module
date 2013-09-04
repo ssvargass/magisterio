@@ -51,7 +51,7 @@ function _m_blocks_site_logo(){
     'attributes' => array(),
   );
   $image_html = render(theme_image($variables_image));
-  $output = '<a href="/">' . $image_html . '</a>';
+  $output = '<a href="'.$base_url.'">' . $image_html . '</a>';
   return $output;
 }
 
