@@ -379,7 +379,8 @@ h1.title {
 .region-postcontent {
 	clear: both;
 	margin-top: 20px;
-	padding-top: 30px;
+	padding-top: 35px;
+	background: url(../img/texCuadros.png) repeat-x top;
 }
 .region-postcontent h2 {
 	font-size: 20px;
@@ -467,7 +468,6 @@ h1.title {
 	padding: 0px;
 }
 .view-vistas-editorial .jcarousel-clip {
-	width: 690px;
 	left: 25px;
 }
 .view-vistas-editorial .jcarousel-clip-horizontal a {
