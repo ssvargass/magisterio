@@ -221,17 +221,10 @@ body {
 	text-transform: uppercase;
 	color: #4C4C4C;
 }
-.region-s-right .view-eventos,
-.region-s-left .view-novedades-magisterio {
-	padding: 10px 0;
-	border-top: 1px solid #ddd;
-	margin-top: 10px;
-	position: relative;
-}
 .region-s-left .view-novedades-magisterio {
 	height: 210px;
 }
-.region-s-right .view-eventos:before,
+.view-eventos:before,
 .region-s-left .view-novedades-magisterio:before {
 	content: '';
 	width: 70px;
@@ -241,7 +234,7 @@ body {
 	top: -6px;
 	left: 0px;
 }
-.region-s-right .view-eventos:before {
+.view-eventos:before {
 	background: #D65B87;
 }
 .region-s-left > .block-views:first-child .view-novedades-magisterio:before {
@@ -312,7 +305,7 @@ body {
 	width: 350px;
 	float: right;
 }
-.region-s-right .view-eventos .views-row {
+.view-eventos .views-row {
 	clear: both;
 	height: 30px;
 	padding-bottom: 10px;
@@ -324,7 +317,7 @@ body {
 	font-size:18px;
 	font-weight:bold;
 }
-.region-s-right .view-eventos .views-field-field-fecha-de-publicaci-n-1 {
+.view-eventos .views-field-field-fecha-de-publicaci-n-1 {
 	float: left;
 	margin-right: 10px;
 	padding-right: 5px;
@@ -333,14 +326,14 @@ body {
 	min-width: 35px;
 	text-align: center;
 }
-.region-s-right .view-eventos .views-field-field-fecha-de-publicaci-n-1 .s-dia {
+.view-eventos .views-field-field-fecha-de-publicaci-n-1 .s-dia {
 	font-size: 15px;
 	font-weight: bold;
 }
-.region-s-right .view-eventos .views-field-title {
+.view-eventos .views-field-title {
 	line-height: 30px;
 }
-.region-s-right .view-eventos .views-field-title a {
+.view-eventos .views-field-title a {
 	color: #D65B87;
 	font-weight: bold;
 }
@@ -492,3 +485,10 @@ body {
 }
 /*footer fin*/
 
+
+.view-eventos, .region-s-left .view-novedades-magisterio {
+	padding:10px 0;
+	border-top:1px solid #ddd;
+	margin-top:10px;
+	position:relative;
+}
