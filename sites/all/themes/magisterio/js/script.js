@@ -1,5 +1,5 @@
 (function ($) {
-	$(document).ready(function(){
+	/*$(document).ready(function(){
 		$('.expanded','#block-system-main-menu').hover(function(){
 			$('ul',this).show()
 		},function(){
@@ -12,5 +12,5 @@
 			var padre = this;
 			setTimeout(function(){$('.views-field-nothing', padre).hide()},500);
 		})
-	})
+	})*/
 })(jQuery);

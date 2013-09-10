@@ -58,6 +58,8 @@ function _m_blocks_site_logo(){
 function _m_blocks_sub_menu_interna(){
   $url = request_path();
   $menu = menu_load_links('main-menu');
+  $url_arr = explode('/', $url);
+  if(count($url_arr) > 1) $url = $url_arr[0];
   switch ($url) {
     case 'editorial':
       $pathern = 466;

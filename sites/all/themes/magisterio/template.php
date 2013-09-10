@@ -1,10 +1,8 @@
 <?php
-	function magisterio_preprocess_html(&$variables) {		
-	    if(arg(0)=='node' && is_numeric(arg(1))) {
-	    	$class_name = '';
-	    	if(arg(1) == 113) $class_name = 'editorial';
-	    	if(arg(1) == 114) $class_name = 'libreria';
-	        $variables['classes_array'][] = 'class_interna_' . $class_name;
-	    }
+	function magisterio_preprocess_html(&$variables) {
+	    $url = request_path();
+	  	$url_arr = explode('/', $url);
+	  	if(count($url_arr) > 1) $url = $url_arr[0];
+	    $variables['classes_array'][] = 'class_interna_' . $url;
 	}
 ?>

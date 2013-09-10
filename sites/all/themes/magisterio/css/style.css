@@ -21,8 +21,9 @@ a:hover {
 .clear {
   clear: both; }
 
-h1.title {
-  display: none; }
+/*h1.title {
+  display: none; 
+}*/
 
 .clearfix:after {
   visibility: hidden;
@@ -243,8 +244,13 @@ h1.title {
   -moz-box-shadow: 4px 5px 5px rgba(230, 230, 230, 0.5);
   box-shadow: 4px 5px 5px rgba(230, 230, 230, 0.5); }
 
+.view-t-picos .views-row:hover .views-field-nothing,
+.view-t-picos .views-row .views-field-nothing:hover{
+  display: block;
+}
+
 .view-t-picos .views-row .views-field-nothing:before {
-  content: ' ';
+  content: '';
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
