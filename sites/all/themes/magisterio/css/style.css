@@ -619,6 +619,40 @@ a:hover {
   margin-right: 10px;
 }
 
+.view-vistas-libreria.view-id-vistas_libreria .views-row .left_pre_venta,
+.view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta {
+  display: inline-block;
+  *display: inline-block; 
+  vertical-align: top; }
+
+.view-vistas-libreria.view-id-vistas_libreria .views-row .left_pre_venta {
+  width: 330px;
+  padding-right: 10px;
+  border-right: 1px dotted #DDD;}
+
+.view-vistas-libreria.view-id-vistas_libreria .views-row .left_pre_venta .pre_portada {
+  float: left;
+  margin-right: 10px; }
+
+.view-vistas-libreria.view-id-vistas_libreria .views-row .left_pre_venta .pre_title,
+.view-vistas-libreria.view-id-vistas_libreria .views-row .left_pre_venta .pre_descrip {
+  width: 200px; 
+  float: right; }
+
+.view-vistas-libreria.view-id-vistas_libreria .views-row .left_pre_venta .pre_title a {
+  font-size: 20px;
+  color: #666;
+  text-transform: uppercase;
+  padding: 5px 0px;
+  display: block; }
+
+.view-vistas-libreria.view-id-vistas_libreria .views-row .left_pre_venta .pre_descrip a {
+  color: #3B5998; }
+
+.view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta {
+  text-align: center;
+  width: 100%; }
+
 /*libreria fin*/
 /*footer inicio*/
 #t-footer {
