@@ -613,6 +613,8 @@ a:hover {
   width: 560px;
   margin: 0px auto 10px auto;
   overflow: auto;
+  padding-bottom: 15px;
+  border-bottom: 1px dotted #DDD;
 }
 #block-views-vistas-libreria-block-2 .view-vistas-libreria .views-row .views-field-field-portada {
   float: left;
@@ -651,7 +653,40 @@ a:hover {
 
 .view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta {
   text-align: center;
-  width: 100%; }
+  width: 215px; }
+
+.view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_fecha {
+  color: #A9A4AB;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+
+.view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_impres {
+  color: #958CA1;
+  font-size: 15px;
+  margin-bottom: 20px;
+
+}
+
+.view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_ebook {
+  color: #3B5998;
+  font-weight: 700;
+  margin-bottom: 20px;
+
+}
+
+.view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_vermas a {
+  color: #FFF;
+  background: #ED1A40;
+  padding: 5px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  
+}
+
 
 /*libreria fin*/
 /*footer inicio*/
