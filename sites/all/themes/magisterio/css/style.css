@@ -21,9 +21,9 @@ a:hover {
 .clear {
   clear: both; }
 
-/*h1.title {
+h1.title {
   display: none; 
-}*/
+}
 
 .clearfix:after {
   visibility: hidden;
@@ -75,7 +75,8 @@ a:hover {
   -moz-border-radius-topleft: 3px;
   -moz-border-radius-topright: 3px;
   border-top-left-radius: 3px;
-  border-top-right-radius: 3px; }
+  border-top-right-radius: 3px;
+  border-top: 5px red solid; }
 
 .not-front .block-menu .menu .menu:before {
   width: 75px; }
@@ -122,7 +123,7 @@ a:hover {
   .block-menu ul.menu > li:first-child > .menu li {
     border-color: #006FBA;
   }
-    .region-t-header ul.menu li:first-child ul.menu:before {
+    .block-menu .menu li:first-child .menu:before {
       border-top: 5px solid #006FBA;
     }
 
@@ -659,23 +660,17 @@ a:hover {
   color: #A9A4AB;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 10px;
-
-}
+  margin-bottom: 10px; }
 
 .view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_impres {
   color: #958CA1;
   font-size: 15px;
-  margin-bottom: 20px;
-
-}
+  margin-bottom: 20px; }
 
 .view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_ebook {
-  color: #3B5998;
+  color: #;
   font-weight: 700;
-  margin-bottom: 20px;
-
-}
+  margin-bottom: 20px; }
 
 .view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_vermas a {
   color: #FFF;
@@ -683,12 +678,79 @@ a:hover {
   padding: 5px 10px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  border-radius: 5px;
-  
-}
+  border-radius: 5px; }
 
+.view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_vermas a:hover {
+  background: #3B5998; }
 
 /*libreria fin*/
+/*libroInterna Inicio*/
+.view-portada-libro .views-field-field-autor a {
+  color: #666;
+  display: block;
+  padding: 5px 5px 0px 20px;
+  background: url(../img/icoPerfil.png) no-repeat top left;
+  
+}
+.class_interna_editorial #content-wrapper .region.region-content,
+.class_interna_libreria #content-wrapper .region.region-content {
+  width: 400px;
+  margin-right: 10px; }
+
+.class_interna_editorial .node-libros > div,
+.class_interna_libreria .node-libros > div {
+  margin: 5px 0px; }
+
+.class_interna_editorial .node-libros .field-name-title h2,
+.class_interna_libreria .node-libros .field-name-title h2 {
+  color: #000; }
+
+.class_interna_editorial .node-libros .field-name-field-subt-tulo-,
+.class_interna_libreria .node-libros .field-name-field-subt-tulo- {
+  font-size: 15px; }
+
+.class_interna_editorial .node-libros .field-name-field-autor,
+.class_interna_libreria .node-libros .field-name-field-autor {
+  color: #3B5998; }
+
+.class_interna_editorial .node-libros .field-name-field-descripci-n,
+.class_interna_libreria .node-libros .field-name-field-descripci-n {
+  color: #666; }
+
+.class_interna_editorial .node-libros .field-name-commerce-stock,
+.class_interna_editorial .node-libros .field-name-field-t-pico,
+.class_interna_editorial .node-libros .field-name-field-categor-a,
+.class_interna_libreria .node-libros .field-name-commerce-stock,
+.class_interna_libreria .node-libros .field-name-field-t-pico,
+.class_interna_libreria .node-libros .field-name-field-categor-a,
+.class_interna_libreria .node-libros .field-name-field-editorial {
+  color: #000; }
+
+.class_interna_editorial .node-libros .field-name-commerce-stock a,
+.class_interna_editorial .node-libros .field-name-field-t-pico a,
+.class_interna_editorial .node-libros .field-name-field-categor-a a,
+.class_interna_editorial .node-libros .field-name-field-descripci-n a,
+.class_interna_editorial .node-libros .field-name-field-editorial a,
+.class_interna_libreria .node-libros .field-name-commerce-stock a,
+.class_interna_libreria .node-libros .field-name-field-t-pico a,
+.class_interna_libreria .node-libros .field-name-field-categor-a a,
+.class_interna_libreria .node-libros .field-name-field-descripci-n a,
+.class_interna_libreria .node-libros .field-name-field-editorial a {
+  color: #3B5998; }
+
+.class_interna_editorial .node-libros .field-name-commerce-stock a:hover,
+.class_interna_editorial .node-libros .field-name-field-t-pico a:hover,
+.class_interna_editorial .node-libros .field-name-field-categor-a a:hover,
+.class_interna_editorial .node-libros .field-name-field-descripci-n a:hover,
+.class_interna_editorial .node-libros .field-name-field-editorial a:hover,
+.class_interna_libreria .node-libros .field-name-commerce-stock a:hover,
+.class_interna_libreria .node-libros .field-name-field-t-pico a:hover,
+.class_interna_libreria .node-libros .field-name-field-categor-a a:hover,
+.class_interna_libreria .node-libros .field-name-field-descripci-n a:hover,
+.class_interna_libreria .node-libros .field-name-field-editorial a:hover {
+  color: #CC316D; }
+
+/*libroInterna Fin*/
 /*footer inicio*/
 #t-footer {
   margin-top: 10px;
