@@ -61,6 +61,12 @@
  * @see template_preprocess_page()
  * @see template_process()
  */
+if(user_is_anonymous()) {
+  unset($page['header']['system_user-menu']);
+} else {
+  unset($page['header']['menu_menu-an-nimo-menu']);  
+}
+
 ?>
 <div id="page-wrapper">
   <? if (isset($page['t-header'])): ?>
