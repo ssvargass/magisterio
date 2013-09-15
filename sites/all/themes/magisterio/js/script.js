@@ -6,11 +6,14 @@
 			$('ul',this).hide()
 		})
 
-		$('.views-row .left-menu-topcs ul li', '.view-t-picos').hover(function(){
-			var clase = $(this).attr('class');
-			clase = clase.replace('s-t','.r-t');
-			var padre = $(this).parents('.views-row');
-			console.log($(clase, padre).html());
+		$('.view-t-picos .views-field-nothing').each(function(){
+			var  papa = $(this)
+			$('.left-menu-topcs li', this).hover(function(){
+				var clase = $(this).attr('class');
+				var def_class = clase.replace('s-t', 's-r');
+				$('.right-menu-topcs .s-right-topcs', papa).css('z-index','1');
+				$('.'+def_class, papa).css('z-index','2');
+			})
 		})
 	})
 })(jQuery);
