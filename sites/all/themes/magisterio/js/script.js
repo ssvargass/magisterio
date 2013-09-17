@@ -15,5 +15,13 @@
 				$('.'+def_class, papa).css('z-index','2');
 			})
 		})
+		$('#block-menu-menu-an-nimo-menu li.last a').click(function(){
+			var login = $('#block-user-login');
+			if(!login.hasClass('active')){
+				login.addClass('active');
+			} else {
+				login.removeClass('active');
+			}
+		})
 	})
 })(jQuery);

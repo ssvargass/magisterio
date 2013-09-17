@@ -571,8 +571,13 @@ h1.title {
   padding: 5px 10px;
   top: 120px;
   right: 0px;
-  
+  display: none;
 }
+
+.block-user.active{
+  display: block;
+}
+
 .block-user:before {
   width: 0; 
   height: 0; 

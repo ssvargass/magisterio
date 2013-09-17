@@ -89,3 +89,15 @@ function _m_blocks_sub_menu_interna(){
   );
   return theme_item_list($list);
 }
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function m_blocks_form_alter(&$form, &$form_state, $form_id){
+  switch ($form_id) {
+    case 'user_login_block':
+      $form['actions']['submit']['#value'] = t('Entrar');
+    break;
+  }
+}
