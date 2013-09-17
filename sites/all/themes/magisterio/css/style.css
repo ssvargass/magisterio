@@ -166,12 +166,10 @@ h1.title {
     border-color: #F68B1F;
   }
 
-.not-front .region-header #block-m-blocks-sub-menu-interna {
+.class_interna_libreria .region-header #block-m-blocks-sub-menu-interna {
   background: #036EB6;
   padding: 10px; }
-.page-node-114.not-front .region-header #block-m-blocks-sub-menu-interna {
-  background: #ED1941; }
-
+  
 .not-front .t-header #block-menu-menu-an-nimo-menu,
 #block-system-user-menu {
   float: right; }
@@ -924,7 +922,7 @@ h1.title {
   cursor: pointer;
 }
 .comment-wrapper form.comment-form .form-actions input:hover {
-  opacity: 0.7;
+  opacity: 0.7; 
 }
 .comment-wrapper form.comment-form .form-actions input#edit-submit {
   background: #ED1A40;
