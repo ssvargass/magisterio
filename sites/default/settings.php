@@ -217,7 +217,7 @@ $databases = array (
     array (
       'database' => 'magisterio',
       'username' => 'root',
-      'password' => 'aR:v_34Lxxc',
+      'password' => '',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',

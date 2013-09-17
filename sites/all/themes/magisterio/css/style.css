@@ -166,10 +166,14 @@ h1.title {
     border-color: #F68B1F;
   }
 
-.class_interna_libreria .region-header #block-m-blocks-sub-menu-interna {
+.class_interna_editorial .region-header #block-m-blocks-sub-menu-interna {
   background: #036EB6;
   padding: 10px; }
   
+.class_interna_libreria .region-header #block-m-blocks-sub-menu-interna {
+  padding: 10px;
+  background: #ED1941; }
+
 .not-front .t-header #block-menu-menu-an-nimo-menu,
 #block-system-user-menu {
   float: right; }
