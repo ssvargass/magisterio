@@ -101,7 +101,6 @@ h1.title {
   font-size: 1.5em; }
 
 .class_interna_faq .region-header .block-menu .menu .menu,
-.t-header,
 .t-header #block-system-user-menu,
 .region-t-header ul.menu ul.menu,
 .front .region-header .block-menu .menu .menu {
@@ -816,10 +815,13 @@ h1.title {
   background: url(../img/icoPerfil.png) no-repeat top left;
   
 }
-.class_interna_editorial #content-wrapper .region.region-content,
-.class_interna_libreria #content-wrapper .region.region-content {
+.class_interna_editorial #content-wrapper .region.region-content {
   width: 400px;
   margin-right: 10px; }
+
+.class_interna_libreria #content-wrapper .region.region-content {
+  width: 730px;
+}
 
 .class_interna_editorial .node-libros > div,
 .class_interna_libreria .node-libros > div {
@@ -924,16 +926,12 @@ h1.title {
   margin-right: 10px;
   color: #FFF;
   cursor: pointer;
+  background: #ED1A40;
 }
 .comment-wrapper form.comment-form .form-actions input:hover {
   opacity: 0.7; 
 }
-.comment-wrapper form.comment-form .form-actions input#edit-submit {
-  background: #ED1A40;
-}
-.comment-wrapper form.comment-form .form-actions input#edit-preview {
-  background: #3B5998;
-}
+
 /*libroInterna Fin*/
 /*faq Inicio*/
 .class_interna_faq #content-wrapper .region.region-content {
