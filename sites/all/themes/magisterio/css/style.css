@@ -277,13 +277,24 @@ h1.title {
 
 .view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .left-menu-topcs {
   float: left;
-  width: 100px; 
+  width: 100px;
+  padding: 10px 0px;
+  -webkit-box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
+  -moz-box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
+  box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; 
 }
 
 .view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .left-menu-topcs li {
   color: #4C4C4C;
   padding: 5px 10px 5px 15px;
-  cursor: pointer; 
+  cursor: pointer;
+  font-weight: bold; 
 }
 
 .view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .left-menu-topcs li:hover {
@@ -313,6 +324,12 @@ h1.title {
   -moz-border-radius-bottomright: 5px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  height: 280px;
+  padding: 10px;
+  -webkit-box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
+  -moz-box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
+  box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
+  width: 245px;
 }
 
 .view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs:first-child{
@@ -322,6 +339,7 @@ h1.title {
 .view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs .views-row {
   border: none;
   width: 100%; 
+  background-image: none;
 }
 
 .view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs .views-row a {
@@ -820,7 +838,6 @@ h1.title {
   margin-right: 10px; }
 
 .class_interna_libreria #content-wrapper .region.region-content {
-  width: 730px;
 }
 
 .class_interna_editorial .node-libros > div,
