@@ -50,6 +50,9 @@ h1.title {
   width: 220px;
   height: 80px;
   margin: 10px 0px; }
+  .class_interna_libreria .m-logoperpage {
+    background: url(../img/libreriaLogo.png) no-repeat center center;
+  }
 
 #content-wrapper > #content {
   width: 960px;
@@ -79,7 +82,7 @@ h1.title {
   -moz-border-radius-topright: 3px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  border-top: 5px red solid; }
+  border-top: 3px red solid; }
 
 #t-footer .block-menu .menu .menu:before {
   display: none;
@@ -115,14 +118,18 @@ h1.title {
   -moz-border-radius: 3px;
   border-radius: 3px;
   left: -10px;
-  top: 23px; }
+  top: 23px;
+  -webkit-box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
+  -moz-box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
+  box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24); }
 
 .block-menu .menu > li > a {
   position: relative;
   z-index: 11;
 }
 .region-t-header ul.menu li:first-child > a,
-.block-menu ul.menu > li:first-child > a {
+.block-menu ul.menu > li:first-child > a, 
+.block-menu ul.menu > li:first-child > .menu li a:hover {
   color: #006FBA; }
   .region-t-header ul.menu li:first-child > .menu li a:hover,
   .block-menu ul.menu > li:first-child > .menu li a:hover,
@@ -131,13 +138,13 @@ h1.title {
     border-color: #006FBA;
   }
     .block-menu .menu li:first-child .menu:before {
-      border-top: 5px solid #006FBA;
+      border-top: 3px solid #006FBA;
     }
 
 .region-t-header ul.menu li:nth-child(2) > a,
-.block-menu .menu li:nth-child(2) > a {
-  color: #ED1941;
-  padding-right: 15px; }
+.block-menu .menu li:nth-child(2) > a,
+.block-menu ul.menu > li:nth-child(2) > .menu li a:hover  {
+  color: #ED1941; }
   .region-t-header ul.menu li:nth-child(2) > .menu li a:hover,
   .block-menu ul.menu > li:nth-child(2) > .menu li a:hover,
   .region-t-header ul.menu li:nth-child(2) > .menu li,
@@ -294,7 +301,8 @@ h1.title {
   color: #4C4C4C;
   padding: 5px 10px 5px 15px;
   cursor: pointer;
-  font-weight: bold; 
+  font-weight: bold;
+  font-size: 15px; 
 }
 
 .view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .left-menu-topcs li:hover {
@@ -316,7 +324,6 @@ h1.title {
   position: absolute;
   top: -1px;
   left: 0px;
-  padding-left: 5px;
   border: 1px solid #DDD;
   -webkit-border-top-right-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
@@ -325,7 +332,7 @@ h1.title {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   height: 280px;
-  padding: 10px;
+  padding: 10px 0px;
   -webkit-box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
   -moz-box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
   box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
@@ -340,20 +347,23 @@ h1.title {
   border: none;
   width: 100%; 
   background-image: none;
+  padding: 0px;
 }
-
 .view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs .views-row a {
   display: block;
-  color: #000; }
+  padding: 7px 0px 7px 10px; 
+  color: #666;
+}
 
 .view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs .views-row a:hover {
-  color: #d45680; }
+  color: #d45680; 
+  background: #F1F1F1;
+}
 
 .block-menu ul.menu li ul.menu li {
   float: initial;
   padding: 0 0 0 10px;
   margin: 0;
-  border-left: 5px solid;
 } 
 .block-menu ul.menu li ul.menu li a {
   color: #000;
@@ -403,6 +413,7 @@ h1.title {
 .region-s-left > .block-views:first-child .view-novedades-magisterio:before {
   background: #006FBA; }
 
+.class_interna_libreria .view-eventos:before,
 .view-vistas-libreria:before,
 .region-s-left > .block-views:nth-child(2) .view-novedades-magisterio:before {
   background: #ED1941; }
@@ -718,7 +729,7 @@ h1.title {
   color: #D65B87; }
 
 .not-front #content-wrapper .region.region-content {
-  width: 740px; }
+  width: 400px; }
 
 .not-front .region-content > .block-views > h2 {
   text-transform: uppercase;
@@ -896,6 +907,8 @@ h1.title {
 .comment-wrapper {
   border-top: 5px solid #ED1A40;
   padding-top: 10px;
+  max-height: 380px;
+  overflow: auto;
 }
 .comment-wrapper .comment {
   padding-bottom: 10px;
