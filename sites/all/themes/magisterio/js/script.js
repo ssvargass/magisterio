@@ -22,6 +22,7 @@
 			} else {
 				login.removeClass('active');
 			}
+			return false;
 		})
 	})
 })(jQuery);
