@@ -36,6 +36,10 @@ h1.title {
 * html .clearfix {
   zoom: 1; }
 
+#modalBackdrop,
+#modalContent {
+  display: none !important;
+}
 /* IE6 */
 *:first-child + html .clearfix {
   zoom: 1; }
@@ -101,7 +105,8 @@ h1.title {
   font-size: 1em; }
 
 .region-header .block-menu .menu li {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin: 0 5px 0 0; }
 
 .class_interna_faq .region-header .block-menu .menu .menu,
 .t-header #block-system-user-menu,
@@ -184,9 +189,18 @@ h1.title {
 #block-system-user-menu {
   float: right; }
 
+#block-system-user-menu ul.menu li {
+  margin: 0;
+  padding: 0;
+}
+#block-system-user-menu ul.menu li a {
+  padding: 3px 0 3px 10px;
+  display: block;
+}
 #block-system-user-menu .menu a {
   font-size: 12px;
-  color: #000; }
+  color: #000;
+  text-transform: uppercase; }
 
 .not-front .t-header #block-menu-menu-an-nimo-menu ul.menu li a {
   color: #9E9E9E;
@@ -403,8 +417,9 @@ h1.title {
   top: -6px;
   left: 0px; }
 
+.class_interna_editorial .view-eventos:before,
 .view-vistas-editorial:before {
-  background: #0A6CE0; }
+  background: #036EB6; }
 
 .view-preguntas-frecuentes .view-filters form:before,
 .view-eventos:before {
@@ -632,6 +647,7 @@ h1.title {
   border-radius: 5px;
   height: 20px;
   width: 100%;
+  padding-left: 5px;
 }
 .block-user .form-item {
   position: relative;
@@ -857,7 +873,9 @@ h1.title {
 
 .class_interna_editorial .node-libros .field-name-title h2,
 .class_interna_libreria .node-libros .field-name-title h2 {
-  color: #000; }
+  color: #000;
+  margin-top: 5px;
+  font-size: 20px; }
 
 .class_interna_editorial .node-libros .field-name-field-subt-tulo-,
 .class_interna_libreria .node-libros .field-name-field-subt-tulo- {
@@ -870,6 +888,9 @@ h1.title {
 .class_interna_editorial .node-libros .field-name-field-descripci-n,
 .class_interna_libreria .node-libros .field-name-field-descripci-n {
   color: #666; }
+.class_interna_editorial .node-libros .field-name-field-descripci-n .field-label,
+.class_interna_libreria .node-libros .field-name-field-descripci-n .field-label {
+  font-size: 15px; }
 
 .class_interna_editorial .node-libros .field-name-commerce-stock,
 .class_interna_editorial .node-libros .field-name-field-t-pico,
