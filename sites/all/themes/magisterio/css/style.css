@@ -287,9 +287,9 @@ h1.title {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: 4px 5px 5px rgba(230, 230, 230, 0.5);
-  -moz-box-shadow: 4px 5px 5px rgba(230, 230, 230, 0.5);
-  box-shadow: 4px 5px 5px rgba(230, 230, 230, 0.5);
+  -webkit-box-shadow: 5px -5px 5px rgba(50, 48, 45, 0.32);
+  -moz-box-shadow:    5px -5px 5px rgba(50, 48, 45, 0.32);
+  box-shadow:         5px -5px 5px rgba(50, 48, 45, 0.32);
   width: 350px; 
   height: auto;
 }
@@ -432,6 +432,7 @@ h1.title {
   top: -6px;
   left: 0px; }
 
+.node-autores .field-name-nuestros-autores:before
 .class_interna_editorial .view-eventos:before,
 .view-vistas-editorial:before {
   background: #036EB6; }
@@ -1092,53 +1093,92 @@ h1.title {
   border-left: 5px solid #CE306F;
 }
 .view-novedades-magisterio {
-  border-top: 1px solid #DDD;
-}
+  border-top: 1px solid #DDD; }
+
 .view-novedades-magisterio .views-row {
   margin-bottom: 5px;
   overflow: auto;
   border-bottom: 1px solid #DDD;
-  padding: 5px 0;
-}
+  padding: 5px 0; }
+
 .view-novedades-magisterio .views-row > div {
-  margin-bottom: 5px;
-}
+  margin-bottom: 5px; }
+
 .view-novedades-magisterio .views-row .views-field-field-portada {
   float: left;
-  margin-right: 10px;
-}
+  margin-right: 10px; }
+
 .view-novedades-magisterio .views-row .views-field-title a {
   font-size: 15px;
   font-weight: bold;
-  display: block;
-}
+  display: block; }
+
 .view-novedades-magisterio .views-row .views-field-field-autor a {
   text-transform: uppercase;
-  color: #666;
-}
+  color: #666; }
+
 .view-novedades-magisterio .views-row .views-field-commerce-price {
   color: #000;
   font-size: 22px;
-  font-weight: bold;
-}
+  font-weight: bold; }
+
 .view-novedades-magisterio .view-footer a {
   display: block;
   background: url(../img/arrowRecomendados.png) no-repeat center center;
   height: 30px;
-  cursor: pointer;
-}
+  cursor: pointer; }
+
 .view-novedades-magisterio .view-footer a:hover {
-  opacity: 0.7;
-}
+  opacity: 0.7; }
+
 /*recomendados Fin*/
 /*ampliarEvento Inicio*/
 .class_interna_revista .region.region-content {
   width: 630px; }
 
 .class_interna_revista .region.region-content p {
-  margin: 10px 0;
-}
+  margin: 10px 0; }
 
+/*autor Inicio*/
+.node-autores {
+  margin-top: 10px;
+  overflow: auto; }
+
+.node-autores .field-name-nuestros-autores {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 10px;
+  position: relative; }
+
+.node-autores .field-name-nuestros-autores:before {
+  content: '';
+  width: 70px;
+  height: 5px;
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 0px;
+  background: #006FBA; }
+
+.node-autores .field-name-nuestros-autores h2 {
+  color: #000; }
+
+.node-autores .field-name-field-foto {
+  float: left;
+  margin-right: 10px; }
+
+.node-autores .field-name-title {
+  margin: 10px 0px;
+  color: #000; }
+
+.node-autores .field-name-field-nacimiento {
+  color: #006FBA; 
+  margin-bottom: 10px; }
+
+.node-autores .field-name-field-nacimiento span.hierarchical-select-item-separator {
+  color: #000; }
+
+/*autor Fin*/
 /*ampliarEvento Fin*/
 /*footer inicio*/
 #t-footer {
