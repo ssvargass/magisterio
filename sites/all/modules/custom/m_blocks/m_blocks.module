@@ -67,6 +67,9 @@ function _m_blocks_sub_menu_interna(){
     case 'libreria':
       $pathern = 467;
     break;
+    case 'revista':
+      $pathern = 468;
+    break;
     
     default:
       # code...
