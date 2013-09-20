@@ -146,6 +146,7 @@ h1.title {
       border-top: 3px solid #006FBA;
     }
 
+.class_interna_libreria .view-novedades-magisterio .views-row .views-field-title a,
 .region-t-header ul.menu li:nth-child(2) > a,
 .block-menu .menu li:nth-child(2) > a,
 .block-menu ul.menu > li:nth-child(2) > .menu li a:hover  {
@@ -156,7 +157,9 @@ h1.title {
   .block-menu ul.menu > li:nth-child(2) > .menu li {
     border-color: #ED1941;
   }
-
+    .class_interna_libreria #block-views-novedades-magisterio-block-2 h2 {
+      border-color: #ED1941 !important;   
+    }
 .region-t-header ul.menu li:nth-child(3) > a,
 .block-menu .menu li:nth-child(3) > a {
   color: #6E9A34; }
@@ -1065,6 +1068,51 @@ h1.title {
   margin-bottom: 10px; }
 
 /*faq Fin*/
+/*recomendados Inicio*/
+
+#block-views-novedades-magisterio-block-2 {
+  padding: 15px;
+  border: 1px solid #DDD;
+  margin-bottom: 20px;
+}
+#block-views-novedades-magisterio-block-2 h2 {
+  padding: 5px 10px;
+  margin-left: -15px;
+  margin-bottom: 10px;
+  border-left: 5px solid;
+}
+.view-novedades-magisterio {
+  padding: 20px 0;
+  border-top: 1px solid #DDD;
+}
+.view-novedades-magisterio .views-row {
+  margin-bottom: 5px;
+  overflow: auto;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #DDD;
+}
+.view-novedades-magisterio .views-row > div {
+  margin-bottom: 5px;
+}
+.view-novedades-magisterio .views-row .views-field-field-portada {
+  float: left;
+  margin-right: 10px;
+}
+.view-novedades-magisterio .views-row .views-field-title a {
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+}
+.view-novedades-magisterio .views-row .views-field-field-autor a {
+  text-transform: uppercase;
+  color: #666;
+}
+.view-novedades-magisterio .views-row .views-field-commerce-price {
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+}
+/*recomendados Fin*/
 /*footer inicio*/
 #t-footer {
   margin-top: 10px;
