@@ -1,0 +1,14 @@
+name = Field Hidden Migrate
+description = Provides support for importing into hidden fields with the Migrate module.
+package = Fields
+core = 7.x
+
+dependencies[] = migrate
+dependencies[] = field_hidden
+files[] = field_hidden.migrate.inc
+; Information added by drupal.org packaging script on 2013-07-29
+version = "7.x-1.4"
+core = "7.x"
+project = "field_hidden"
+datestamp = "1375109467"
+
