@@ -1082,7 +1082,6 @@ h1.title {
   border-left: 5px solid;
 }
 .view-novedades-magisterio {
-  padding: 20px 0;
   border-top: 1px solid #DDD;
 }
 .view-novedades-magisterio .views-row {
@@ -1109,8 +1108,17 @@ h1.title {
 }
 .view-novedades-magisterio .views-row .views-field-commerce-price {
   color: #000;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
+}
+.view-novedades-magisterio .view-footer a {
+  display: block;
+  background: url(../img/arrowRecomendados.png) no-repeat center center;
+  height: 30px;
+  cursor: pointer;
+}
+.view-novedades-magisterio .view-footer a:hover {
+  opacity: 0.7;
 }
 /*recomendados Fin*/
 /*footer inicio*/
