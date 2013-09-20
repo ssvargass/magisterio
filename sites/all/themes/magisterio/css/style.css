@@ -55,8 +55,11 @@ h1.title {
   height: 80px;
   margin: 10px 0px; }
   .class_interna_libreria .m-logoperpage {
-    background: url(../img/libreriaLogo.png) no-repeat center center;
-  }
+    background: url(../img/libreriaLogo.png) no-repeat center center;}
+  .class_interna_editorial .m-logoperpage {
+    background: url(../img/editorialLogo.png) no-repeat center center;}
+  .class_interna_revista .m-logoperpage {
+    background: url(../img/revistaLogo.png) no-repeat center center;}
 
 #content-wrapper > #content {
   width: 960px;
@@ -132,6 +135,8 @@ h1.title {
   position: relative;
   z-index: 11;
 }
+.class_interna_editorial .region-header #block-m-blocks-sub-menu-interna {
+  background: #006FBA; }
 .region-t-header ul.menu li:first-child > a,
 .block-menu ul.menu > li:first-child > a, 
 .block-menu ul.menu > li:first-child > .menu li a:hover {
@@ -145,7 +150,9 @@ h1.title {
     .block-menu .menu li:first-child .menu:before {
       border-top: 3px solid #006FBA;
     }
-
+.class_interna_libreria .region-header #block-m-blocks-sub-menu-interna {
+  background: #ED1941; }
+.class_interna_libreria .view-eventos .views-field-title a,
 .class_interna_libreria .view-novedades-magisterio .views-row .views-field-title a,
 .region-t-header ul.menu li:nth-child(2) > a,
 .block-menu .menu li:nth-child(2) > a,
@@ -180,13 +187,18 @@ h1.title {
     border-color: #F68B1F;
   }
 
-.class_interna_editorial .region-header #block-m-blocks-sub-menu-interna {
-  background: #036EB6;
+.class_interna_revista .region-header #block-m-blocks-sub-menu-interna,
+.class_interna_revista .view-preguntas-frecuentes .view-filters form:before, 
+.class_interna_revista .view-eventos:before {
+  background: #6E9A34; }
+  .class_interna_revista .view-novedades-magisterio .views-row .views-field-title a,
+  .class_interna_revista .view-eventos .views-field-title a {
+    color: #6E9A34; }
+    .class_interna_revista #block-views-novedades-magisterio-block-2 h2 {
+      border-color: #6E9A34 !important; }
+
+.region-header #block-m-blocks-sub-menu-interna {
   padding: 10px; }
-  
-.class_interna_libreria .region-header #block-m-blocks-sub-menu-interna {
-  padding: 10px;
-  background: #ED1941; }
 
 .not-front .t-header #block-menu-menu-an-nimo-menu,
 #block-system-user-menu {
@@ -493,7 +505,8 @@ h1.title {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  border-top: none; }
+  border-top: none;
+  margin-bottom: 20px; }
 
 .region-s-left #block-views-categor-as-block .view-categor-as .views-row a {
   color: #8D8D8D;
@@ -561,10 +574,11 @@ h1.title {
   color: #D65B87;
   font-weight: bold; }
 
-#content-wrapper .region.region-content {
+.region-content {
   width: 198px;
   float: left; }
 
+.front .region-content > #block-system-main,
 #content-wrapper .region.region-content #first-time {
   display: none;}
 
@@ -747,7 +761,7 @@ h1.title {
 .not-front .region-s-left .view-eventos .views-field-title a:hover {
   color: #D65B87; }
 
-.not-front #content-wrapper .region.region-content {
+.class_interna_libreria .region.region-content {
   width: 400px; }
 
 .not-front .region-content > .block-views > h2 {
@@ -860,15 +874,11 @@ h1.title {
   color: #666;
   display: block;
   padding: 5px 5px 0px 20px;
-  background: url(../img/icoPerfil.png) no-repeat top left;
-  
-}
-.class_interna_editorial #content-wrapper .region.region-content {
-  width: 400px;
-  margin-right: 10px; }
+  background: url(../img/icoPerfil.png) no-repeat top left; }
 
-.class_interna_libreria #content-wrapper .region.region-content {
-}
+.class_interna_editorial #content-wrapper .region.region-content {
+  width: 730px;
+  margin-right: 10px; }
 
 .class_interna_editorial .node-libros > div,
 .class_interna_libreria .node-libros > div {
@@ -1079,7 +1089,7 @@ h1.title {
   padding: 5px 10px;
   margin-left: -15px;
   margin-bottom: 10px;
-  border-left: 5px solid;
+  border-left: 5px solid #CE306F;
 }
 .view-novedades-magisterio {
   border-top: 1px solid #DDD;
@@ -1087,8 +1097,8 @@ h1.title {
 .view-novedades-magisterio .views-row {
   margin-bottom: 5px;
   overflow: auto;
-  padding-bottom: 5px;
   border-bottom: 1px solid #DDD;
+  padding: 5px 0;
 }
 .view-novedades-magisterio .views-row > div {
   margin-bottom: 5px;
@@ -1121,6 +1131,15 @@ h1.title {
   opacity: 0.7;
 }
 /*recomendados Fin*/
+/*ampliarEvento Inicio*/
+.class_interna_revista .region.region-content {
+  width: 630px; }
+
+.class_interna_revista .region.region-content p {
+  margin: 10px 0;
+}
+
+/*ampliarEvento Fin*/
 /*footer inicio*/
 #t-footer {
   margin-top: 10px;
