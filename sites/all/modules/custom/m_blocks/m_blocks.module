@@ -84,6 +84,7 @@ function _m_blocks_sub_menu_interna(){
       $sub_menu[] = l($title,$path);
     }
   }
+
   $list = array(
     'items' => $sub_menu,
     'title' => '',
