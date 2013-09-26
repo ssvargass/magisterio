@@ -70,6 +70,9 @@ function _m_blocks_sub_menu_interna(){
     case 'revista':
       $pathern = 468;
     break;
+    case 'formación':
+      $pathern = 469;
+    break;
     
     default:
       # code...
