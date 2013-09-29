@@ -60,6 +60,9 @@ h1.title {
     background: url(../img/editorialLogo.png) no-repeat center center;}
   .class_interna_revista .m-logoperpage {
     background: url(../img/revistaLogo.png) no-repeat center center;}
+  .class_interna_formacion .m-logoperpage,  
+  .class_interna_formación .m-logoperpage {
+    background: url(../img/formacionLogo.png) no-repeat center center;}
 
 #content-wrapper > #content {
   width: 960px;
@@ -196,6 +199,10 @@ h1.title {
     color: #6E9A34; }
     .class_interna_revista #block-views-novedades-magisterio-block-2 h2 {
       border-color: #6E9A34 !important; }
+
+.class_interna_formacion .region-header #block-m-blocks-sub-menu-interna,
+.class_interna_formación .region-header #block-m-blocks-sub-menu-interna {
+  background: #F68B1F; }
 
 .region-header #block-m-blocks-sub-menu-interna {
   padding: 10px; }
