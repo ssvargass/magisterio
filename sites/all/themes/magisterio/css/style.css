@@ -190,10 +190,13 @@ h1.title {
     border-color: #F68B1F;
   }
 
+.class_interna_revista .view-art-culos:before,
+.view-revista-actual:before,
 .class_interna_revista .region-header #block-m-blocks-sub-menu-interna,
 .class_interna_revista .view-preguntas-frecuentes .view-filters form:before, 
 .class_interna_revista .view-eventos:before {
   background: #6E9A34; }
+  .class_interna_revista #content-wrapper .view-art-culos .views-field-title a,
   .class_interna_revista .view-novedades-magisterio .views-row .views-field-title a,
   .class_interna_revista .view-eventos .views-field-title a {
     color: #6E9A34; }
@@ -426,6 +429,8 @@ h1.title {
   text-transform: uppercase;
   color: #4C4C4C; }
 
+.view-art-culos:before,
+.view-revista-actual:before,
 .view-preguntas-frecuentes .view-filters form:before,
 .view-vistas-libreria:before,
 .view-vistas-editorial:before,
@@ -537,6 +542,8 @@ h1.title {
 .region-s-left #block-views-art-culos-block-1 .view-art-culos .views-row.views-row-first a {
   font-size: 35px; }
 
+.view-art-culos,
+.view-revista-actual,
 .view-preguntas-frecuentes .view-filters form,
 .view-vistas-libreria,
 .view-vistas-editorial,
@@ -544,7 +551,8 @@ h1.title {
   padding: 10px 0;
   border-top: 1px solid #ddd;
   margin-top: 10px;
-  position: relative; }
+  position: relative;
+  margin-right: 10px; }
 
 .region-s-right {
   width: 330px;
@@ -768,6 +776,9 @@ h1.title {
 
 .not-front .region-s-left .view-eventos .views-field-title a:hover {
   color: #D65B87; }
+
+.class_interna_libreria.page-node-114 .region.region-content {
+  width: 740px; }
 
 .class_interna_libreria .region.region-content {
   width: 400px; }
@@ -1145,7 +1156,89 @@ h1.title {
 
 .class_interna_revista .region.region-content p {
   margin: 10px 0; }
+/*ampliarEvento Fin*/
+/*revista Inicio*/
+.view-revista-actual .views-row .views-field-field-portada {
+  float: left;
+  margin-right: 10px; }
 
+.view-revista-actual .views-row > div {
+  margin-bottom: 10px; }
+
+.view-revista-actual .views-row .views-field-field-subt-tulo- {
+  font-size: 20px;
+  color: #474344;
+  font-weight: bold; }
+
+.view-revista-actual .views-row .views-field-add-to-cart-form-1,
+.view-revista-actual .views-row .views-field-add-to-cart-form {
+  float: left;
+  width: 347px; }
+
+.view-revista-actual .views-row .views-field-add-to-cart-form-1 .s_this_suscribcion,
+.view-revista-actual .views-row .views-field-add-to-cart-form .s_this_edition {
+  position: relative;
+  background: #6E9A34;
+  padding: 10px;
+  color: #FFF;
+  font-weight: bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; 
+  text-align: center; }
+
+.view-revista-actual .views-row .views-field-add-to-cart-form-1 .s_this_suscribcion {
+  width: 85px; }
+
+.view-revista-actual .views-row .views-field-add-to-cart-form .s_this_edition {
+  width: 140px; }
+
+.view-revista-actual .views-row .views-field-add-to-cart-form-1 form,
+.view-revista-actual .views-row .views-field-add-to-cart-form form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 0;
+  cursor: pointer;
+  height: 35px;
+  width: 150px; }
+
+.class_interna_revista #block-views-art-culos-block-3 {
+  margin-top: 20px;
+  clear: both; }
+
+.view-revista-actual .views-row .views-field-field-leyenda {
+  clear: both;
+  background: #5B5B5B;
+  padding: 10px;
+  color: #fff;
+  font-style: italic;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px; 
+  position: relative; }
+
+.view-revista-actual .views-row .views-field-field-leyenda:before {
+  width: 0px;
+  height: 0px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #5B5B5B; 
+  position: absolute; 
+  bottom: -15px;
+  left: 25px;
+  content: ''; }
+
+.view-art-culos .views-row {
+  width: 300px;
+  float: left;
+  margin-right: 10px; }
+
+/*revista Fin*/
 /*autor Inicio*/
 .node-autores {
   margin-top: 10px;
