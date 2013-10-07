@@ -75,6 +75,9 @@ h1.title {
 .front .region-header .block-menu:first-child {
   width: 500px; }
 
+.front .view-art-culos {
+  border-top: none;
+}
 .class_interna_faq .block-menu .menu .menu:before,
 .block-menu .menu .menu:before {
   width: 110px;
@@ -138,6 +141,11 @@ h1.title {
   position: relative;
   z-index: 11;
 }
+
+.block-menu .menu li:nth-child(3) {
+  margin-left: 14px;
+}
+
 .class_interna_editorial .region-header #block-m-blocks-sub-menu-interna {
   background: #006FBA; }
 .region-t-header ul.menu li:first-child > a,
@@ -370,8 +378,7 @@ h1.title {
   -moz-border-radius-bottomright: 5px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  height: 280px;
-  padding: 10px 0px;
+  height: auto;
   -webkit-box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
   -moz-box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
   box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
@@ -583,9 +590,6 @@ h1.title {
   font-size: 15px;
   font-weight: bold; }
 
-.view-eventos .views-field-title {
-  line-height: 30px; }
-
 .view-eventos .views-field-title a {
   color: #D65B87;
   font-weight: bold; }
@@ -606,6 +610,10 @@ h1.title {
 
 #content-wrapper .view-art-culos .views-field-field-fecha-de-publicaci-n {
   color: #A4A6AB; }
+
+#content-wrapper .view-art-culos .views-field.views-field-body {
+  width: 205px;
+}
 
 .region-postcontent {
   clear: both;
@@ -1238,6 +1246,95 @@ h1.title {
   float: left;
   margin-right: 10px; }
 
+<<<<<<< HEAD
+=======
+.class_interna_revista .field-name-field-mapa {
+  overflow: hidden; 
+  width: 600px; }
+  
+/*ampliarEvento Fin*/
+/*revista Inicio*/
+.view-revista-actual .views-row .views-field-field-portada {
+  float: left;
+  margin-right: 10px; }
+
+.view-revista-actual .views-row > div {
+  margin-bottom: 10px; }
+
+.view-revista-actual .views-row .views-field-field-subt-tulo- {
+  font-size: 20px;
+  color: #474344;
+  font-weight: bold; }
+
+.view-revista-actual .views-row .views-field-add-to-cart-form-1,
+.view-revista-actual .views-row .views-field-add-to-cart-form {
+  float: left;
+  width: 347px; }
+
+.view-revista-actual .views-row .views-field-add-to-cart-form-1 .s_this_suscribcion,
+.view-revista-actual .views-row .views-field-add-to-cart-form .s_this_edition {
+  position: relative;
+  background: #6E9A34;
+  padding: 10px;
+  color: #FFF;
+  font-weight: bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; 
+  text-align: center; }
+
+.view-revista-actual .views-row .views-field-add-to-cart-form-1 .s_this_suscribcion {
+  width: 85px; }
+
+.view-revista-actual .views-row .views-field-add-to-cart-form .s_this_edition {
+  width: 140px; }
+
+.view-revista-actual .views-row .views-field-add-to-cart-form-1 form,
+.view-revista-actual .views-row .views-field-add-to-cart-form form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 0;
+  cursor: pointer;
+  height: 35px;
+  width: 150px; }
+
+.class_interna_revista #block-views-art-culos-block-3 {
+  margin-top: 20px;
+  clear: both; }
+
+.view-revista-actual .views-row .views-field-field-leyenda {
+  clear: both;
+  background: #5B5B5B;
+  padding: 10px;
+  color: #fff;
+  font-style: italic;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px; 
+  position: relative; }
+
+.view-revista-actual .views-row .views-field-field-leyenda:before {
+  width: 0px;
+  height: 0px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #5B5B5B; 
+  position: absolute; 
+  bottom: -15px;
+  left: 25px;
+  content: ''; }
+
+.view-art-culos .views-row {
+  width: 300px;
+  float: left;
+  margin-right: 10px; }
+
+>>>>>>> mapa
 /*revista Fin*/
 /*autor Inicio*/
 .node-autores {
