@@ -16,7 +16,8 @@ body {
   list-style: none; }
 
 a:hover {
-  color: #CC316D; }
+  color: #CC316D; 
+  opacity: 0.7 !important; }
 
 .clear {
   clear: both; }
@@ -513,7 +514,8 @@ h1.title {
 .jcarousel-container .jcarousel-clip-horizontal li .views-field-title a {
   font-weight: bold; }
 
-.jcarousel-container .jcarousel-clip-horizontal li .views-field-commerce-price {
+.jcarousel-container .jcarousel-clip-horizontal li .views-field-commerce-price, 
+.jcarousel-container .jcarousel-clip-horizontal li .views-field-commerce-price-1 .field-content {
   color: #3B5998;
   font-weight: bold; }
 
@@ -772,8 +774,12 @@ h1.title {
 
 .not-front .t-header .region-t-header {
   width: 960px;
-  margin: auto; }
+  margin: auto; 
+  position: relative; }
 
+.not-front .t-header .region-t-header .block-user {
+  top: 30px; }
+  
 .not-front .t-header .region-t-header > div.block {
   float: left; }
 
