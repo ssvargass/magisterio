@@ -472,6 +472,7 @@ h1.title {
   text-transform: uppercase;
   color: #4C4C4C; }
 
+.view-filtro-categor-as .view-content:before,
 .view-art-culos:before,
 .view-revista-actual:before,
 .view-preguntas-frecuentes .view-filters form:before,
@@ -487,6 +488,7 @@ h1.title {
   top: -6px;
   left: 0px; }
 
+.view-filtro-categor-as .view-content:before,
 .class_interna_editorial .view-eventos:before,
 .node-autores .field-name-nuestros-autores:before
 .class_interna_editorial .view-eventos:before,
@@ -588,6 +590,7 @@ h1.title {
 .region-s-left #block-views-art-culos-block-1 .view-art-culos .views-row.views-row-first a {
   font-size: 35px; }
 
+.view-filtro-categor-as .view-content,
 .view-art-culos,
 .view-revista-actual,
 .view-preguntas-frecuentes .view-filters form,
@@ -865,8 +868,13 @@ h1.title {
 .view-vistas-libreria.view-id-vistas_libreria ul.jcarousel li {
   height: 300px; 
   border: none;
-  background: none;
+  background: none; }
+
+.view-vistas-libreria.view-id-vistas_libreria ul.jcarousel li {
   width: 170px !important; }
+  
+.view-vistas-editorial ul.jcarousel li {
+  width: 175px !important; }
 
 #block-views-vistas-editorial-block-1 .view-vistas-editorial ul.jcarousel li {
   width: 185px !important; }
@@ -1072,6 +1080,10 @@ h1.title {
 .comment-wrapper form.comment-form .form-actions input:hover {
   opacity: 0.7; }
 
+.view-filtro-categor-as {
+  margin-top: 10px; 
+  width: 760px; }
+
 .view-filtro-categor-as .view-header,
 .view-filtro-categor-as .view-filters,
 .view-filtro-categor-as .view-content .views-row,
@@ -1086,9 +1098,30 @@ h1.title {
 .view-filtro-categor-as .view-filters {
   float: right; }
 
+.view-filtro-categor-as .view-filters .form-type-select select {
+  border: 1px solid #DDD; }
+
 .view-filtro-categor-as .view-content .views-row {
   width: 160px;
-  margin: 10px; }
+  margin: 10px;
+  text-align: center; }
+
+.view-filtro-categor-as .view-content .views-row > div {
+  margin-bottom: 5px; }
+
+.view-filtro-categor-as .view-content .views-row .views-field-title-1 a {
+  font-size: 13px;
+  color: #333;
+  font-weight: bold; }
+
+.view-filtro-categor-as .view-content .views-row .views-field-field-autor a {
+  color: #666; }
+
+.view-filtro-categor-as .view-content .views-row .views-field-commerce-price *,
+.view-filtro-categor-as .view-content .views-row .views-field-commerce-price-1 *{
+  color: #3B5998;
+  font-weight: bold;
+}
 
 /*libroInterna Fin*/
 /*faq Inicio*/
