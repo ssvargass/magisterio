@@ -526,6 +526,7 @@ h1.title {
 .jcarousel-container .jcarousel-clip-horizontal li .views-field-title a {
   font-weight: bold; }
 
+.view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_ebook,
 .jcarousel-container .jcarousel-clip-horizontal li .views-field-commerce-price, 
 .jcarousel-container .jcarousel-clip-horizontal li .views-field-commerce-price-1 .field-content {
   color: #3B5998;
@@ -861,10 +862,10 @@ h1.title {
   height: 300px; 
   border: none;
   background: none;
-  width: 135px; }
+  width: 170px !important; }
 
 #block-views-vistas-editorial-block-1 .view-vistas-editorial ul.jcarousel li {
-  width: 140px !important; }
+  width: 185px !important; }
 
 #block-views-vistas-libreria-block-2 .view-vistas-libreria .views-row {
   width: 560px;
@@ -918,14 +919,15 @@ h1.title {
   font-weight: bold;
   margin-bottom: 10px; }
 
+.view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_fecha span {
+  display: block; }
+
 .view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_impres {
-  color: #958CA1;
+  color: #3B5998;
   font-size: 15px;
   margin-bottom: 20px; }
 
 .view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_ebook {
-  color: #;
-  font-weight: 700;
   margin-bottom: 20px; }
 
 .view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_vermas a {
