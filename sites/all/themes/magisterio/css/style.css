@@ -304,7 +304,7 @@ h1.title {
   padding-right: 15px;
   cursor: pointer; }
 
-.view-t-picos .views-row .views-field-nothing {
+.view-t-picos .views-row .views-field-php-4 {
   display: none;
   background: #fff;
   position: absolute;
@@ -322,12 +322,12 @@ h1.title {
   height: auto;
 }
 
-.view-t-picos .views-row:hover .views-field-nothing,
-.view-t-picos .views-row .views-field-nothing:hover{
+.view-t-picos .views-row:hover .views-field-php-4,
+.view-t-picos .views-row .views-field-php-4:hover{
   display: block;
 }
 
-.view-t-picos .views-row .views-field-nothing:before {
+.view-t-picos .views-row .views-field-php-4:before {
   content: '';
   width: 0;
   height: 0;
@@ -339,7 +339,7 @@ h1.title {
   border-bottom: 10px solid #BBB;
   border-right: 7px solid transparent; }
 
-.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .left-menu-topcs {
+.view-t-picos .views-row .views-field-php-4 .contain-topcs-sub-menu .left-menu-topcs {
   float: left;
   width: 100px;
   padding: 10px 0px;
@@ -354,7 +354,7 @@ h1.title {
   border-bottom-left-radius: 5px; 
 }
 
-.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .left-menu-topcs li {
+.view-t-picos .views-row .views-field-php-4 .contain-topcs-sub-menu .left-menu-topcs li {
   color: #4C4C4C;
   padding: 5px 10px 5px 15px;
   cursor: pointer;
@@ -362,20 +362,20 @@ h1.title {
   font-size: 15px; 
 }
 
-.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .left-menu-topcs li:hover {
+.view-t-picos .views-row .views-field-php-4 .contain-topcs-sub-menu .left-menu-topcs li:hover {
   background: #F1F1F1;
   border-left: 2px solid #D45680;
   padding-left: 10px;
   margin-left: -1px; }
 
-.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .right-menu-topcs {
+.view-t-picos .views-row .views-field-php-4 .contain-topcs-sub-menu .right-menu-topcs {
   width: 310px;
   border-left: #ccc 1px solid;
   position: absolute;
   left: 100px;
 }
 
-.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs {
+.view-t-picos .views-row .views-field-php-4 .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs {
   z-index: 1;
   background: #fff;
   position: absolute;
@@ -395,23 +395,23 @@ h1.title {
   width: 245px;
 }
 
-.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs:first-child{
+.view-t-picos .views-row .views-field-php-4 .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs:first-child{
   z-index: 2
 }
 
-.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs .views-row {
+.view-t-picos .views-row .views-field-php-4 .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs .views-row {
   border: none;
   width: 100%; 
   background-image: none;
   padding: 0px;
 }
-.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs .views-row a {
+.view-t-picos .views-row .views-field-php-4 .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs .views-row a {
   display: block;
   padding: 7px 0px 7px 10px; 
   color: #666;
 }
 
-.view-t-picos .views-row .views-field-nothing .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs .views-row a:hover {
+.view-t-picos .views-row .views-field-php-4 .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs .views-row a:hover {
   color: #d45680; 
   background: #F1F1F1;
 }
@@ -606,7 +606,8 @@ h1.title {
 
 .region-content {
   width: 198px;
-  float: left; }
+  float: left; 
+  margin-right: 10px; }
 
 .front .region-content > #block-system-main,
 #content-wrapper .region.region-content #first-time {
