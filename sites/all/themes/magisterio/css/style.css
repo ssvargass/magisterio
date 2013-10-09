@@ -102,17 +102,19 @@ h1.title {
 
 .t-header .block-menu .menu li:nth-child(4) > ul.menu:before {
   width: 95px; }
-.t-header .block-menu .menu li:first-child .menu:before,
+.t-header .block-menu .menu li:first-child .menu:before {
+  width: 80px; }
 .t-header .block-menu .menu li:nth-child(2) .menu:before, 
 .t-header .block-menu .menu li:nth-child(3) .menu:before {
-  width: 80px; }
+  width: 70px; }
 
 .block-menu .menu li:nth-child(4) > ul.menu:before {
   width: 140px; }
-.block-menu .menu li:first-child .menu:before,
+.block-menu .menu li:first-child .menu:before {
+  width: 110px; }
 .block-menu .menu li:nth-child(2) .menu:before, 
 .block-menu .menu li:nth-child(3) .menu:before {
-  width: 110px; }
+  width: 95px; }
 
 #t-footer .block-menu .menu .menu:before {
   display: none; }
@@ -156,10 +158,6 @@ h1.title {
 .block-menu .menu > li > a {
   position: relative;
   z-index: 11;
-}
-
-.block-menu .menu li:nth-child(3) {
-  margin: 0 20px 0 14px;
 }
 
 .class_interna_editorial .region-header #block-m-blocks-sub-menu-interna {
@@ -449,6 +447,20 @@ h1.title {
   width: 390px;
   float: left;
   margin-right: 20px; }
+
+.region-s-left .block-views .view {
+  position: relative; }
+.region-s-left .block-views .view .view-header {
+  position: absolute;
+  left: 290px;
+  top: -32px;
+  z-index: 10; }
+.region-s-left .block-views:nth-child(2) .view .view-header {
+  left: 305px; }
+.region-s-left .block-views .view .view-header a {
+  color: #000;
+  font-size: 13px; 
+  text-transform: lowercase; }
 
 .view-preguntas-frecuentes .view-header p,
 .region-s-right > .block-views > h2,
@@ -779,7 +791,7 @@ h1.title {
 
 .not-front .t-header .region-t-header .block-user {
   top: 30px; }
-  
+
 .not-front .t-header .region-t-header > div.block {
   float: left; }
 
@@ -1000,13 +1012,13 @@ h1.title {
 .comment-wrapper {
   border-top: 5px solid #ED1A40;
   padding-top: 10px;
-  max-height: 380px;
-  overflow: auto;
 }
 .comment-wrapper .comment {
   padding-bottom: 10px;
   border-bottom: 1px dotted #DDD;
-  margin: 20px 0px;
+  margin: 10px 0px;
+  max-height: 315px;
+  overflow-y: auto;
 }
 .comment-wrapper .comment a {
   color: #666;
