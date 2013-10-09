@@ -99,8 +99,19 @@ h1.title {
   border-top-right-radius: 3px;
   border-top: 3px red solid; }
 
+.t-header .block-menu .menu li:nth-child(4) > ul.menu:before {
+  width: 95px; }
+.t-header .block-menu .menu li:first-child .menu:before,
+.t-header .block-menu .menu li:nth-child(2) .menu:before, 
+.t-header .block-menu .menu li:nth-child(3) .menu:before {
+  width: 80px; }
+
 .block-menu .menu li:nth-child(4) > ul.menu:before {
   width: 140px; }
+.block-menu .menu li:first-child .menu:before,
+.block-menu .menu li:nth-child(2) .menu:before, 
+.block-menu .menu li:nth-child(3) .menu:before {
+  width: 110px; }
 
 #t-footer .block-menu .menu .menu:before {
   display: none; }
@@ -315,9 +326,9 @@ h1.title {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: 5px -5px 5px rgba(50, 48, 45, 0.32);
-  -moz-box-shadow:    5px -5px 5px rgba(50, 48, 45, 0.32);
-  box-shadow:         5px -5px 5px rgba(50, 48, 45, 0.32);
+  -webkit-box-shadow: 5px -5px -5px rgba(56, 44, 32, 0.24);
+  -moz-box-shadow:    5px -5px -5px rgba(56, 44, 32, 0.24);
+  box-shadow:         5px -5px -5px rgba(56, 44, 32, 0.24);
   width: 350px; 
   height: auto;
 }
@@ -461,10 +472,11 @@ h1.title {
   top: -6px;
   left: 0px; }
 
+.class_interna_editorial .view-eventos:before,
 .node-autores .field-name-nuestros-autores:before
 .class_interna_editorial .view-eventos:before,
 .view-vistas-editorial:before {
-  background: #036EB6; }
+  background: #006FBA; }
 
 .view-preguntas-frecuentes .view-filters form:before,
 .view-eventos:before {
@@ -807,7 +819,7 @@ h1.title {
   font-size: 20px; 
 }
 .view-vistas-libreria .jcarousel-container,
-#block-views-vistas-editorial-block .view-vistas-editorial .jcarousel-container {
+.view-vistas-editorial .jcarousel-container {
   width: 750px;
   padding: 0px; }
 
@@ -828,10 +840,13 @@ h1.title {
 
 .view-vistas-editorial ul.jcarousel li,
 .view-vistas-libreria.view-id-vistas_libreria ul.jcarousel li {
-  height: 275px; 
+  height: 300px; 
   border: none;
   background: none;
   width: 135px; }
+
+#block-views-vistas-editorial-block-1 .view-vistas-editorial ul.jcarousel li {
+  width: 140px !important; }
 
 #block-views-vistas-libreria-block-2 .view-vistas-libreria .views-row {
   width: 560px;
