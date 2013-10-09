@@ -19,6 +19,8 @@ a:hover {
   color: #CC316D; 
   opacity: 0.7 !important; }
 
+.view-filtro-categor-as .view-content,
+.region-footer > .block-block,
 .clear {
   clear: both; }
 
@@ -833,10 +835,12 @@ h1.title {
 .class_interna_libreria .region.region-content {
   width: 400px; }
 
-.not-front .region-content > .block-views > h2 {
+.not-front .region-content > .block-views > h2,
+.view-filtro-categor-as .view-header * {
   text-transform: uppercase;
   font-size: 20px; 
-}
+  font-weight: 700; }
+
 .view-vistas-libreria .jcarousel-container,
 .view-vistas-editorial .jcarousel-container {
   width: 750px;
@@ -1063,11 +1067,28 @@ h1.title {
   margin-right: 10px;
   color: #FFF;
   cursor: pointer;
-  background: #ED1A40;
-}
+  background: #ED1A40; }
+
 .comment-wrapper form.comment-form .form-actions input:hover {
-  opacity: 0.7; 
-}
+  opacity: 0.7; }
+
+.view-filtro-categor-as .view-header,
+.view-filtro-categor-as .view-filters,
+.view-filtro-categor-as .view-content .views-row,
+.view-filtro-categor-as .view-filters .form-type-select * {
+  display: inline-block;
+  *display: inline-block; 
+  vertical-align: middle; }
+
+.view-filtro-categor-as .view-header {
+  font-weight: 700; }
+
+.view-filtro-categor-as .view-filters {
+  float: right; }
+
+.view-filtro-categor-as .view-content .views-row {
+  width: 160px;
+  margin: 10px; }
 
 /*libroInterna Fin*/
 /*faq Inicio*/
@@ -1472,9 +1493,6 @@ h1.title {
 
 .region-footer .block-menu ul.menu li ul.menu li a:hover {
   margin-left: 0; }
-
-.region-footer > .block-block {
-  clear: both; }
 
 .region-footer #block-menu-menu-footer-menu#block-menu-menu-footer-menu.block-menu .content > .menu > li > .menu > li > a {
   font-size: 16px;
