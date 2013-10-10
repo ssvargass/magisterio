@@ -12,6 +12,9 @@ function m_blocks_block_info(){
   $blocks['sub_menu_interna'] = array(
     'info' => t('Sub menu de las páginas internas'), 
   );
+  $blocks['magisterio_suscripcion'] = array(
+    'info' => t('Bloque para crear suscripciones al sitio'), 
+  );
   return $blocks;
 }
 
@@ -29,6 +32,10 @@ function m_blocks_block_view($delta = '') {
     break;
     case 'sub_menu_interna':
       $block['content'] = _m_blocks_sub_menu_interna();
+    break;
+    case 'magisterio_suscripcion':
+      $block['subject'] = t('Recibe nuestras novedades');
+      $block['content'] = drupal_get_form('magisterio_suscripcion');
     break;
   } 
   return $block;
@@ -107,4 +114,16 @@ function m_blocks_form_alter(&$form, &$form_state, $form_id){
       $form['actions']['submit']['#value'] = t('Entrar');
     break;
   }
+}
+
+
+function magisterio_suscripcion($form, $form_state){
+  $form['mail'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Digita tu correo'),
+    '#attributes' => array(
+      'id' => array('edit-mail'),
+    ),
+  );
+  return $form;
 }
