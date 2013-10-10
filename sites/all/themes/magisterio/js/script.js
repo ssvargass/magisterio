@@ -6,13 +6,13 @@
 			$('ul',this).hide()
 		})
 
-		$('.view-t-picos .views-field-nothing').each(function(){
+		$('.view-t-picos .views-field-php-4').each(function(){
 			var  papa = $(this)
 			$('.left-menu-topcs li', this).hover(function(){
 				var clase = $(this).attr('class');
 				var def_class = clase.replace('s-t', 's-r');
-				$('.right-menu-topcs .s-right-topcs', papa).css('z-index','1');
-				$('.'+def_class, papa).css('z-index','2');
+				$('.right-menu-topcs .s-right-topcs', papa).css('display','none');
+				$('.' + def_class, papa).css('display','block');
 			})
 		})
 		$('#block-menu-menu-an-nimo-menu li.last a').click(function(){
