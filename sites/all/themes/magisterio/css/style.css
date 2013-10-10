@@ -488,7 +488,7 @@ h1.title {
 .view-preguntas-frecuentes .view-header p,
 .region-s-right > .block-views > h2,
 .region-s-left > .block-views > h2 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   color: #4C4C4C; }
@@ -627,7 +627,8 @@ h1.title {
   border-top: 1px solid #ddd;
   margin-top: 10px;
   position: relative;
-  margin-right: 10px; }
+  margin-right: 10px; 
+  width: 100%; }
 
 .region-s-right {
   width: 300px;
@@ -645,7 +646,7 @@ form#magisterio-suscripcion .form-item-mail {
   margin-top: 5px; }
 
 form#magisterio-suscripcion input[type=text] {
-  width: 285px;
+  width: 288px;
   height: 27px;
   border: 1px solid #999; 
   padding: 0 5px; }
@@ -1028,6 +1029,21 @@ form#magisterio-suscripcion label {
 .class_interna_editorial .node-libros > div,
 .class_interna_libreria .node-libros > div {
   margin: 5px 0px; }
+
+.class_interna_editorial .node-libros .field-name-anonymous-comment,
+.class_interna_libreria .node-libros .field-name-anonymous-comment {
+  font-size: 15px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #DDD;
+  border-left: none;
+  border-right: none;
+  margin: 0px; }
+
+.class_interna_editorial .node-libros .field-name-anonymous-comment a,
+.class_interna_libreria .node-libros .field-name-anonymous-comment a {
+  color: #999; 
+  text-decoration: underline; }
 
 .class_interna_editorial .node-libros .field-name-title h2,
 .class_interna_libreria .node-libros .field-name-title h2 {
