@@ -34,7 +34,6 @@ function m_blocks_block_view($delta = '') {
       $block['content'] = _m_blocks_sub_menu_interna();
     break;
     case 'magisterio_suscripcion':
-      $block['subject'] = t('Recibe nuestras novedades');
       $block['content'] = drupal_get_form('magisterio_suscripcion');
     break;
   } 
@@ -118,6 +117,10 @@ function m_blocks_form_alter(&$form, &$form_state, $form_id){
 
 
 function magisterio_suscripcion($form, $form_state){
+  $form['title'] = array(
+    '#markup' => t('Recibe nuestras novedades'),
+  );
+
   $form['mail'] = array(
     '#type' => 'textfield',
     '#title' => t('Digita tu correo'),
