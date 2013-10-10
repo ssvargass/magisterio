@@ -539,6 +539,10 @@ h1.title {
   width: 190px !important;
   height: 100%; }
 
+.region-s-left .view-novedades-magisterio .jcarousel-container .jcarousel-clip-horizontal li .views-field-title {
+  width: 75%;
+  margin: auto; }
+  
 .jcarousel-container .jcarousel-clip-horizontal li > div {
   margin-bottom: 5px; }
 
