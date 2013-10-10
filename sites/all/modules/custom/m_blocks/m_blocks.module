@@ -119,7 +119,7 @@ function m_blocks_form_alter(&$form, &$form_state, $form_id){
 
 function magisterio_suscripcion($form, $form_state){
   $form['title'] = array(
-    '#markup' => t('Recibe nuestras novedades'),
+    '#markup' => '<div class ="s_title_suscrip">' . t('Recibe nuestras novedades') .'</div>',
   );
 
   $form['mail'] = array(
