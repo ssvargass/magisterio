@@ -34,6 +34,7 @@ function m_blocks_block_view($delta = '') {
       $block['content'] = _m_blocks_sub_menu_interna();
     break;
     case 'magisterio_suscripcion':
+      $block['subject'] = '';
       $block['content'] = drupal_get_form('magisterio_suscripcion');
     break;
   } 
