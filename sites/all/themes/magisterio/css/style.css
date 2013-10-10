@@ -86,7 +86,7 @@ h1.title {
 .class_interna_faq .block-menu .menu .menu:before,
 .block-menu .menu .menu:before {
   width: 110px;
-  height: 30px;
+  height: 28px;
   position: absolute;
   background: #FFF;
   content: '';
@@ -109,14 +109,14 @@ h1.title {
 .t-header .block-menu .menu li:nth-child(2) .menu:before, 
 .t-header .block-menu .menu li:nth-child(3) .menu:before {
   width: 70px; }
-
 .block-menu .menu li:nth-child(4) > ul.menu:before {
   width: 140px; }
 .block-menu .menu li:first-child .menu:before {
   width: 110px; }
-.block-menu .menu li:nth-child(2) .menu:before, 
-.block-menu .menu li:nth-child(3) .menu:before {
+.block-menu .menu li:nth-child(2) .menu:before {
   width: 95px; }
+.block-menu .menu li:nth-child(3) .menu:before {
+  width: 90px; }
 
 #t-footer .block-menu .menu .menu:before {
   display: none; }
@@ -311,6 +311,9 @@ h1.title {
   position: relative;
   background: url(../img/separador.png) no-repeat right center; }
 
+.view-t-picos .views-row.views-row-last {
+  background: none; }
+
 .view-t-picos .views-row .views-field-name {
   background: url(../img/arrowSubMenu.png) no-repeat right center;
   padding-right: 15px;
@@ -387,6 +390,23 @@ h1.title {
   left: 100px;
 }
 
+.view-t-picos .views-row.views-row-last .views-field-php-4 {
+  width: 100px; }
+
+.view-t-picos .views-row.views-row-last .views-field-php-4 .contain-topcs-sub-menu .right-menu-topcs {
+  left: -249px; }
+
+.view-t-picos .views-row.views-row-last .views-field-php-4 .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs {
+  -webkit-box-shadow: -5px 5px 8px rgba(56, 44, 32, 0.24);
+  -moz-box-shadow: -5px 5px 8px rgba(56, 44, 32, 0.24);
+  box-shadow: -5px 5px 8px rgba(56, 44, 32, 0.24); 
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-left-radius: 5px; 
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;  }
+
 .view-t-picos .views-row .views-field-php-4 .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs {
   z-index: 1;
   background: #fff;
@@ -456,7 +476,7 @@ h1.title {
   position: absolute;
   left: 290px;
   top: -32px;
-  z-index: 10; }
+  z-index: 5; }
 .region-s-left .block-views:nth-child(2) .view .view-header {
   left: 305px; }
 .region-s-left .block-views .view .view-header a {
@@ -538,7 +558,7 @@ h1.title {
 
 .block-views .jcarousel-container > a {
   background: url(../img/arrowNovedades.png) no-repeat center center;
-  top: 40%;
+  top: 60px;
   z-index: 9; }
 
 .block-views .jcarousel-container > a:hover {
@@ -632,9 +652,15 @@ h1.title {
   font-size: 15px;
   font-weight: bold; }
 
+.view-eventos .views-field-title span {
+  line-height: 30px; }
+
 .view-eventos .views-field-title a {
-  color: #D65B87;
-  font-weight: bold; }
+  vertical-align: middle;
+  font-weight: bold; 
+  color: #D65B87; 
+  line-height: 15px; 
+  display: block; }
 
 .region-content {
   width: 198px;
@@ -707,6 +733,9 @@ h1.title {
   top: 120px;
   right: 0px;
   display: none;
+  -webkit-box-shadow: 5px -5px 8px rgba(56, 44, 32, 0.24);
+  -moz-box-shadow: 5px -5px 8px rgba(56, 44, 32, 0.24);
+  box-shadow: 5px -5px 8px rgba(56, 44, 32, 0.24);
 }
 
 .block-user.active{
@@ -872,7 +901,7 @@ h1.title {
 
 .view-vistas-libreria.view-id-vistas_libreria ul.jcarousel li {
   width: 170px !important; }
-  
+
 .view-vistas-editorial ul.jcarousel li {
   width: 175px !important; }
 
