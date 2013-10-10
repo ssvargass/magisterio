@@ -220,6 +220,7 @@ h1.title {
     border-top: 3px solid #F68B1F;
   }
 
+.class_interna_revista .view-p-ginas-m-s-le-das:before
 .class_interna_revista .view-art-culos:before,
 .view-revista-actual:before,
 .class_interna_revista .region-header #block-m-blocks-sub-menu-interna,
@@ -233,6 +234,8 @@ h1.title {
     .class_interna_revista #block-views-novedades-magisterio-block-2 h2 {
       border-color: #6E9A34 !important; }
 
+.class_interna_formacion .view-p-ginas-m-s-le-das:before,
+.class_interna_formación .view-p-ginas-m-s-le-das:before,
 .class_interna_formacion .region-header #block-m-blocks-sub-menu-interna,
 .class_interna_formación .region-header #block-m-blocks-sub-menu-interna {
   background: #F68B1F; }
@@ -493,6 +496,7 @@ h1.title {
   text-transform: uppercase;
   color: #4C4C4C; }
 
+.view-p-ginas-m-s-le-das:before,
 .view-filtro-categor-as .view-content:before,
 .view-art-culos:before,
 .view-revista-actual:before,
@@ -509,6 +513,7 @@ h1.title {
   top: -6px;
   left: 0px; }
 
+.class_interna_editorial .view-p-ginas-m-s-le-das:before,
 .view-filtro-categor-as .view-content:before,
 .class_interna_editorial .view-eventos:before,
 .node-autores .field-name-nuestros-autores:before
@@ -523,6 +528,7 @@ h1.title {
 .region-s-left > .block-views:first-child .view-novedades-magisterio:before {
   background: #006FBA; }
 
+.class_interna_libreria .view-p-ginas-m-s-le-das:before,
 .class_interna_libreria .view-eventos:before,
 .view-vistas-libreria:before,
 .region-s-left > .block-views:nth-child(2) .view-novedades-magisterio:before {
@@ -555,6 +561,7 @@ h1.title {
 .jcarousel-container .jcarousel-clip-horizontal li .views-field-title a {
   font-weight: bold; }
 
+.view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_impres,
 .view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_ebook,
 .jcarousel-container .jcarousel-clip-horizontal li .views-field-commerce-price, 
 .jcarousel-container .jcarousel-clip-horizontal li .views-field-commerce-price-1 .field-content {
@@ -564,7 +571,8 @@ h1.title {
 .block-views .jcarousel-container > a {
   background: url(../img/arrowNovedades.png) no-repeat center center;
   top: 60px;
-  z-index: 9; }
+  z-index: 9; 
+  display: block !important; }
 
 .block-views .jcarousel-container > a:hover {
   background: url(../img/arrowNovedades.png) no-repeat center center; }
@@ -616,6 +624,7 @@ h1.title {
 .region-s-left #block-views-art-culos-block-1 .view-art-culos .views-row.views-row-first a {
   font-size: 35px; }
 
+.view-p-ginas-m-s-le-das,
 .view-filtro-categor-as .view-content,
 .view-art-culos,
 .view-revista-actual,
@@ -931,14 +940,8 @@ form#magisterio-suscripcion label {
   border: none;
   background: none; }
 
-.view-vistas-libreria.view-id-vistas_libreria ul.jcarousel li {
-  width: 170px !important; }
-
 .view-vistas-editorial ul.jcarousel li {
   width: 175px !important; }
-
-#block-views-vistas-editorial-block-1 .view-vistas-editorial ul.jcarousel li {
-  width: 185px !important; }
 
 #block-views-vistas-libreria-block-2 .view-vistas-libreria .views-row {
   width: 560px;
@@ -990,15 +993,10 @@ form#magisterio-suscripcion label {
   color: #A9A4AB;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
 
 .view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_fecha span {
   display: block; }
-
-.view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_impres {
-  color: #3B5998;
-  font-size: 15px;
-  margin-bottom: 20px; }
 
 .view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_ebook {
   margin-bottom: 20px; }
@@ -1198,6 +1196,37 @@ form#magisterio-suscripcion label {
   color: #3B5998;
   font-weight: bold;
 }
+
+.view-p-ginas-m-s-le-das .view-content {
+  padding: 10px;
+  border: 1px solid #DDD; }
+
+.view-p-ginas-m-s-le-das .views-row {
+  border-bottom: 1px dotted #DDD; }
+
+.view-p-ginas-m-s-le-das .views-row.views-row-first {
+  margin-top: -10px; }
+
+.view-p-ginas-m-s-le-das .views-row.views-row-last {
+  border-bottom: none; 
+  margin-bottom: -10px; }
+
+.view-p-ginas-m-s-le-das .views-row > div {
+  display: inline-block;
+  *display: inline-block;
+  vertical-align: middle; }
+
+.view-p-ginas-m-s-le-das .views-row .views-field-counter {
+  width: 35px;
+  text-align: center; 
+  color: #DDD; }
+
+.view-p-ginas-m-s-le-das .views-row .views-field-counter span {
+  font-size: 35px;
+}
+
+.view-p-ginas-m-s-le-das .views-row .views-field-title a {
+  color: #DDD; }
 
 /*libroInterna Fin*/
 /*faq Inicio*/
