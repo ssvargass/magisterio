@@ -277,8 +277,8 @@ h1.title {
   padding: 5px;
   background: #999;
   color: #fff;
-  margin-top: 10px;
-  font-size: 15px;
+  margin-top: 7px;
+  font-size: 12px;
   position: relative;
   margin-right: 18px;
   -webkit-border-top-left-radius: 3px;
@@ -287,14 +287,15 @@ h1.title {
   -moz-border-radius-bottomleft: 3px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  display: inline-block; }
+  display: inline-block; 
+  font-weight: normal; }
 
 #block-views-t-picos-block h2:after {
   content: ' ';
   width: 0;
   height: 0;
   border-top: 13px solid transparent;
-  border-bottom: 14px solid transparent;
+  border-bottom: 12px solid transparent;
   border-left: 10px solid #999;
   position: absolute;
   top: 0px;
@@ -302,14 +303,16 @@ h1.title {
 
 #block-views-t-picos-block > .content {
   display: inline-block;
-  vertical-align: middle; }
+  *display: inline-block;
+  vertical-align: middle; 
+  margin-top: 5px; }
 
 .view-t-picos .views-row {
   float: left;
-  padding: 5px 8px 15px 3px;
+  padding: 5px 8px 10px 3px;
   color: #000;
   position: relative;
-  background: url(../img/separador.png) no-repeat right center; }
+  background: url(../img/separador.png) no-repeat right 5px; }
 
 .view-t-picos .views-row.views-row-last {
   background: none; }
@@ -323,7 +326,7 @@ h1.title {
   display: none;
   background: #fff;
   position: absolute;
-  margin-top: 15px;
+  top: 30px;
   left: 0px;
   border: 1px solid #BBB;
   z-index: 1000;
@@ -361,13 +364,12 @@ h1.title {
   -webkit-box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
   -moz-box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
   box-shadow: 5px 5px 8px rgba(56, 44, 32, 0.24);
-  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-left-radius: 0px;
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-radius-topleft: 5px;
-  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-bottomleft: 0px;
   border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px; 
-}
+  border-bottom-left-radius: 0px; }
 
 .view-t-picos .views-row .views-field-php-4 .contain-topcs-sub-menu .left-menu-topcs li {
   color: #4C4C4C;
@@ -436,7 +438,7 @@ h1.title {
   width: 100%; 
   background-image: none;
   padding: 0px; }
-  
+
 .view-t-picos .views-row .views-field-php-4 .contain-topcs-sub-menu .right-menu-topcs .s-right-topcs .views-row a {
   display: block;
   padding: 7px 0px 7px 10px; 
@@ -603,7 +605,8 @@ h1.title {
 .region-s-left #block-views-art-culos-block-1 .view-art-culos .views-row {
   margin: 5px 0px;
   padding-bottom: 5px;
-  border-bottom: 1px dotted #DDD; }
+  border-bottom: 1px dotted #DDD; 
+  width: 390px; }
 
 .region-s-left #block-views-art-culos-block-1 .view-art-culos .views-row a {
   color: #D65B87;
@@ -629,6 +632,30 @@ h1.title {
 .region-s-right {
   width: 300px;
   float: right; }
+
+form#magisterio-suscripcion .s_title_suscrip {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4C4C4C; 
+  padding-bottom: 4px;
+  border-bottom: 2px solid #D65B87; }
+
+form#magisterio-suscripcion .form-item-mail {
+  position: relative; 
+  margin-top: 5px; }
+
+form#magisterio-suscripcion input[type=text] {
+  width: 285px;
+  height: 27px;
+  border: 1px solid #999; 
+  padding: 0 5px; }
+
+form#magisterio-suscripcion label {
+  font-size: 15px;
+  position: absolute;
+  color: #DDD;
+  top: 5px;
+  left: 15px; }
 
 .view-eventos .views-row {
   clear: both;
@@ -688,10 +715,6 @@ h1.title {
 #content-wrapper .view-art-culos .views-field-field-fecha-de-publicaci-n {
   color: #A4A6AB; }
 
-#content-wrapper .view-art-culos .views-field.views-field-body {
-  width: 205px;
-}
-
 .region-postcontent {
   clear: both;
   padding-top: 35px;
@@ -741,9 +764,9 @@ h1.title {
   top: 120px;
   right: 0px;
   display: none;
-  -webkit-box-shadow: 5px -5px 8px rgba(56, 44, 32, 0.24);
-  -moz-box-shadow: 5px -5px 8px rgba(56, 44, 32, 0.24);
-  box-shadow: 5px -5px 8px rgba(56, 44, 32, 0.24);
+  -webkit-box-shadow: -5px 5px 8px rgba(56, 44, 32, 0.24);
+  -moz-box-shadow: -5px 5px 8px rgba(56, 44, 32, 0.24);
+  box-shadow: -5px 5px 8px rgba(56, 44, 32, 0.24);
 }
 
 .block-user.active{
@@ -1476,6 +1499,9 @@ h1.title {
   width: 300px;
   float: left;
   margin-right: 10px; }
+
+.region-content .view-art-culos .views-row {
+  width: 205px; }
 
 >>>>>>> mapa
 /*revista Fin*/
