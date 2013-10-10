@@ -652,15 +652,9 @@ h1.title {
   font-size: 15px;
   font-weight: bold; }
 
-.view-eventos .views-field-title span {
-  line-height: 30px; }
-
 .view-eventos .views-field-title a {
-  vertical-align: middle;
-  font-weight: bold; 
-  color: #D65B87; 
-  line-height: 15px; 
-  display: block; }
+  color: #D65B87;
+  font-weight: bold; }
 
 .region-content {
   width: 198px;
