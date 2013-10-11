@@ -564,10 +564,12 @@ h1.title {
 .jcarousel-container .jcarousel-clip-horizontal li .views-field-title a {
   font-weight: bold; }
 
-.view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_impres,
-.view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_ebook,
-.jcarousel-container .jcarousel-clip-horizontal li .views-field-commerce-price, 
-.jcarousel-container .jcarousel-clip-horizontal li .views-field-commerce-price-1 .field-content {
+.views-row .right_pre_venta .pre_impres,
+.views-row .right_pre_venta .pre_ebook,
+li .views-field-commerce-price, 
+li .views-field-commerce-price-1 .field-content,
+li .views-field-commerce-price a, 
+li .views-field-commerce-price-1 .field-content a {
   color: #3B5998;
   font-weight: bold; }
 
@@ -749,7 +751,7 @@ form#magisterio-suscripcion label {
   text-transform: uppercase; }
 
 .region-postcontent .view-art-culos .views-row {
-  width: 217px;
+  width: 210px;
   padding: 5px 10px;
   display: inline-block;
   border-right: 1px solid #DDD;
@@ -1603,6 +1605,7 @@ form#magisterio-suscripcion label {
 .node-autores .field-name-field-nacimiento span.hierarchical-select-item-separator {
   color: #000; }
 
+.view-publicidad.view-content,
 .view-publicidad.view-display-id-block {
   width: 300px;
   height: 250px;
