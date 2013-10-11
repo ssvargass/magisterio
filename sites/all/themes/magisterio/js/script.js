@@ -15,14 +15,18 @@
 				$('.' + def_class, papa).css('display','block');
 			})
 		})
-		$('#block-menu-menu-an-nimo-menu li.last a').click(function(){
+		$('#block-menu-menu-an-nimo-menu li.last a').hover(function(){
 			var login = $('#block-user-login');
-			if(!login.hasClass('active')){
-				login.addClass('active');
-			} else {
+			login.addClass('active');
+			login.hover(function(){
+			},function(){
 				login.removeClass('active');
-			}
-			return false;
+			})
+		}, function(){
+			var login = $('#block-user-login');
+			setTimeout(function(){
+				if(!login.is(":hover")) login.removeClass('active');
+			},500);
 		})
 	})
 })(jQuery);
