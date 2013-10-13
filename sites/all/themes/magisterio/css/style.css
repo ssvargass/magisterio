@@ -654,11 +654,6 @@ li .views-field-commerce-price-1 .field-content a {
   position: relative; 
   margin-bottom: 10px; }
 
-.region-s-right #block-views-publicidad-block-1 {
-  position: absolute;
-  left: 0px;
-  bottom: 0px; }
-
 form#magisterio-suscripcion .s_title_suscrip {
   font-size: 18px;
   font-weight: bold;
@@ -1605,7 +1600,7 @@ form#magisterio-suscripcion label {
 .node-autores .field-name-field-nacimiento span.hierarchical-select-item-separator {
   color: #000; }
 
-.view-publicidad.view-content,
+.view-publicidad .view-content,
 .view-publicidad.view-display-id-block {
   width: 300px;
   height: 250px;
@@ -1613,6 +1608,20 @@ form#magisterio-suscripcion label {
   vertical-align: middle;
   display: block;
   overflow: hidden; }
+
+.view-publicidad .view-header {
+  text-align: left; }
+
+.region-s-right #block-views-publicidad-block-1 {
+  position: absolute;
+  left: 0px;
+  bottom: -80px; }
+
+.view-publicidad .view-content {
+  width: 300px;
+  height: 250px;
+  overflow: hidden; 
+  margin-bottom: 10px; }
 
 /*autor Fin*/
 /*footer inicio*/
