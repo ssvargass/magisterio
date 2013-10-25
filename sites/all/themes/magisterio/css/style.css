@@ -171,6 +171,7 @@ h1.title {
 .block-menu ul.menu > li:first-child > a, 
 .block-menu ul.menu > li:first-child > .menu li a:hover {
   color: #006FBA; }
+  .class_interna_editorial form#magisterio-suscripcion .s_title_suscrip,
   .region-t-header ul.menu li:first-child > .menu li a:hover,
   .block-menu ul.menu > li:first-child > .menu li a:hover,
   .region-t-header ul.menu li:first-child > .menu li,
@@ -234,6 +235,7 @@ h1.title {
   .class_interna_revista .view-novedades-magisterio .views-row .views-field-title a,
   .class_interna_revista .view-eventos .views-field-title a {
     color: #6E9A34; }
+    .class_interna_revista form#magisterio-suscripcion .s_title_suscrip,
     .class_interna_revista #block-views-novedades-magisterio-block-2 h2 {
       border-color: #6E9A34 !important; }
 
@@ -564,10 +566,12 @@ h1.title {
 .jcarousel-container .jcarousel-clip-horizontal li .views-field-title a {
   font-weight: bold; }
 
-.view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_impres,
-.view-vistas-libreria.view-id-vistas_libreria .views-row .right_pre_venta .pre_ebook,
-.jcarousel-container .jcarousel-clip-horizontal li .views-field-commerce-price, 
-.jcarousel-container .jcarousel-clip-horizontal li .views-field-commerce-price-1 .field-content {
+.views-row .right_pre_venta .pre_impres,
+.views-row .right_pre_venta .pre_ebook,
+li .views-field-commerce-price, 
+li .views-field-commerce-price-1 .field-content,
+li .views-field-commerce-price a, 
+li .views-field-commerce-price-1 .field-content a {
   color: #3B5998;
   font-weight: bold; }
 
@@ -651,11 +655,6 @@ h1.title {
   float: right; 
   position: relative; 
   margin-bottom: 10px; }
-
-.region-s-right #block-views-publicidad-block-1 {
-  position: absolute;
-  left: 0px;
-  bottom: 0px; }
 
 form#magisterio-suscripcion .s_title_suscrip {
   font-size: 18px;
@@ -749,7 +748,7 @@ form#magisterio-suscripcion label {
   text-transform: uppercase; }
 
 .region-postcontent .view-art-culos .views-row {
-  width: 217px;
+  width: 210px;
   padding: 5px 10px;
   display: inline-block;
   border-right: 1px solid #DDD;
@@ -938,6 +937,15 @@ form#magisterio-suscripcion label {
 
 .jcarousel-skin-default .jcarousel-container-horizontal {
   height: auto;
+}
+.class_interna_editorial form#magisterio-suscripcion input[type=text] {
+  width: 94%;
+}
+.class_interna_editorial form#magisterio-suscripcion .s_title_suscrip {
+  font-size: 10px;
+}
+.class_interna_editorial #block-views-libros-por-autor-block {
+  margin-top: 20px;
 }
 /*editoriales fin*/
 /*libreria inicio*/
@@ -1233,14 +1241,14 @@ form#magisterio-suscripcion label {
 .view-p-ginas-m-s-le-das .views-row .views-field-counter {
   width: 35px;
   text-align: center; 
-  color: #DDD; }
+  color: #666; }
 
 .view-p-ginas-m-s-le-das .views-row .views-field-counter span {
   font-size: 35px;
 }
 
 .view-p-ginas-m-s-le-das .views-row .views-field-title a {
-  color: #DDD; }
+  color: #666; }
 
 /*libroInterna Fin*/
 /*faq Inicio*/
@@ -1471,8 +1479,6 @@ form#magisterio-suscripcion label {
   float: left;
   margin-right: 10px; }
 
-<<<<<<< HEAD
-=======
 .class_interna_revista .field-name-field-mapa {
   overflow: hidden; 
   width: 600px; }
@@ -1560,9 +1566,8 @@ form#magisterio-suscripcion label {
   margin-right: 10px; }
 
 .region-content .view-art-culos .views-row {
-  width: 205px; }
+  width: 200px; }
 
->>>>>>> mapa
 /*revista Fin*/
 /*autor Inicio*/
 .node-autores {
@@ -1603,13 +1608,34 @@ form#magisterio-suscripcion label {
 .node-autores .field-name-field-nacimiento span.hierarchical-select-item-separator {
   color: #000; }
 
+.view-publicidad .view-content,
 .view-publicidad.view-display-id-block {
   width: 300px;
-  height: 250px;
+  height: 275px;
   text-align: center;
   vertical-align: middle;
   display: block;
   overflow: hidden; }
+
+.view-publicidad .view-header * {
+  font-size: 10px;
+  color: #666;
+  margin-bottom: 3px;
+}
+
+.view-publicidad .view-header {
+  text-align: left; }
+
+.region-s-right #block-views-publicidad-block-1 {
+  position: absolute;
+  left: 0px;
+  bottom: -80px; }
+
+.view-publicidad .view-content {
+  width: 300px;
+  height: 250px;
+  overflow: hidden; 
+  margin-bottom: 10px; }
 
 /*autor Fin*/
 /*footer inicio*/
