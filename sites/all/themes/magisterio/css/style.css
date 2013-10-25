@@ -1690,23 +1690,12 @@ form#magisterio-suscripcion label {
 
 .view-banner-formaci-n .jcarousel-container > a {
   top: 90px; 
-  opacity: 0.7; }
+  opacity: 0.7; 
+  background: url(../img/arrowFormacionPrev.png) center center no-repeat; }
 
 .view-banner-formaci-n .jcarousel-container > a:hover {
-  opacity: 1; }
-
-.view-banner-formaci-n .jcarousel-container .jcarousel-prev {
+  opacity: 1; 
   background: url(../img/arrowFormacionPrev.png) center center no-repeat; }
-
-.view-banner-formaci-n .jcarousel-container .jcarousel-next {
-  background: url(../img/arrowFormacionNext.png) center center no-repeat; }
-
-.view-banner-formaci-n .jcarousel-container .jcarousel-prev:hover {
-  background: url(../img/arrowFormacionPrev.png) center center no-repeat; }
-
-.view-banner-formaci-n .jcarousel-container .jcarousel-next:hover {
-  background: url(../img/arrowFormacionNext.png) center center no-repeat; }
-
 
 /*formacion Fin*/
 /*footer inicio*/
