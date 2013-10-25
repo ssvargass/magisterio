@@ -1638,6 +1638,77 @@ form#magisterio-suscripcion label {
   margin-bottom: 10px; }
 
 /*autor Fin*/
+/*formacion Inicio*/
+.view-banner-formaci-n {
+  width: 610px;
+  border-top: 1px solid #F68B1F;
+  border-bottom: 1px solid #F68B1F; }
+
+.view-banner-formaci-n .jcarousel-container,
+.view-banner-formaci-n .jcarousel-container .jcarousel-clip-horizontal,
+.view-banner-formaci-n .jcarousel-container .views-field-field-banner {
+  margin: 0;
+  padding: 0; 
+  width: 100%; }
+
+.view-banner-formaci-n .jcarousel-container .views-field-field-banner img {
+  width: 100%;
+  height: auto; }
+
+.view-banner-formaci-n .jcarousel-container ul {
+  height: 230px; }
+
+.view-banner-formaci-n .jcarousel-container li {
+  border: none;
+  margin: 0;
+  height: 100%; 
+  position: relative; }
+
+.view-banner-formaci-n .jcarousel-container li .views-field-title,
+.view-banner-formaci-n .jcarousel-container li .views-field-field-autor-articulo {
+  z-index: 2;
+  position: absolute; }
+
+.view-banner-formaci-n .jcarousel-container li .views-field-title {
+  top: 20px;
+  right: 20px; }
+
+.view-banner-formaci-n .jcarousel-container li .views-field-title a,
+.view-banner-formaci-n .jcarousel-container li .views-field-field-autor-articulo * {
+  font-weight: bold; 
+  width: 270px; 
+  text-align: right; 
+  display: block; 
+  overflow: hidden; }
+
+.view-banner-formaci-n .jcarousel-container li .views-field-title a {
+  font-size: 25px; }
+
+.view-banner-formaci-n .jcarousel-container li .views-field-field-autor-articulo {
+  top: 130px;
+  right: 20px; }
+
+.view-banner-formaci-n .jcarousel-container > a {
+  top: 90px; 
+  opacity: 0.7; }
+
+.view-banner-formaci-n .jcarousel-container > a:hover {
+  opacity: 1; }
+
+.view-banner-formaci-n .jcarousel-container .jcarousel-prev {
+  background: url(../img/arrowFormacionPrev.png) center center no-repeat; }
+
+.view-banner-formaci-n .jcarousel-container .jcarousel-next {
+  background: url(../img/arrowFormacionNext.png) center center no-repeat; }
+
+.view-banner-formaci-n .jcarousel-container .jcarousel-prev:hover {
+  background: url(../img/arrowFormacionPrev.png) center center no-repeat; }
+
+.view-banner-formaci-n .jcarousel-container .jcarousel-next:hover {
+  background: url(../img/arrowFormacionNext.png) center center no-repeat; }
+
+
+/*formacion Fin*/
 /*footer inicio*/
 #t-footer {
   margin-top: 10px;
